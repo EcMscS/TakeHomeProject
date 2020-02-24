@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -94,6 +94,9 @@
 				1F70D81624042EBA00F8557E /* AppDelegate.swift */,
 				1F70D81824042EBA00F8557E /* SceneDelegate.swift */,
 				1F70D83824042F7D00F8557E /* Main Controller */,
+				1F70D839240444C900F8557E /* Explore Controllers */,
+				1F70D83A240444D900F8557E /* Search Controllers */,
+				1F70D83B240444E600F8557E /* Profile Controllers */,
 				1F70D81F24042EBE00F8557E /* Assets.xcassets */,
 				1F70D82124042EBE00F8557E /* LaunchScreen.storyboard */,
 				1F70D82424042EBE00F8557E /* Info.plist */,
@@ -119,6 +122,27 @@
 			path = "Main Controller";
 			sourceTree = "<group>";
 		};
+		1F70D839240444C900F8557E /* Explore Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Explore Controllers";
+			sourceTree = "<group>";
+		};
+		1F70D83A240444D900F8557E /* Search Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Search Controllers";
+			sourceTree = "<group>";
+		};
+		1F70D83B240444E600F8557E /* Profile Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Profile Controllers";
+			sourceTree = "<group>";
+		};
 		22FE71EA7923EB0A74B25D52 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -127,7 +151,6 @@
 				21D9BB299D1B3F4791BBDB15 /* Pods-TakeHomeProjectTests.debug.xcconfig */,
 				42277710B2C933C77A93802C /* Pods-TakeHomeProjectTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
