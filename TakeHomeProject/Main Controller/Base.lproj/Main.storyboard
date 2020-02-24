@@ -10,7 +10,6 @@
         <!--Profile-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <viewController id="BYZ-38-t0r" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
@@ -20,6 +19,7 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Profile" image="unselected-profile" selectedImage="selected-profile" id="xJN-4n-yN1"/>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="926" y="966"/>
         </scene>
@@ -30,14 +30,29 @@
                     <view key="view" contentMode="scaleToFill" id="vNh-QI-X6U">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cQL-R5-eC9" customClass="MGLMapView">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="styleURL__" value="mapbox://styles/mapbox/streets-v11"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="u1g-wu-mLh" firstAttribute="bottom" secondItem="cQL-R5-eC9" secondAttribute="bottom" id="epB-ET-dhe"/>
+                            <constraint firstItem="u1g-wu-mLh" firstAttribute="trailing" secondItem="cQL-R5-eC9" secondAttribute="trailing" id="qlL-1u-jTj"/>
+                            <constraint firstItem="cQL-R5-eC9" firstAttribute="leading" secondItem="u1g-wu-mLh" secondAttribute="leading" id="uki-G3-cqZ"/>
+                            <constraint firstItem="cQL-R5-eC9" firstAttribute="top" secondItem="vNh-QI-X6U" secondAttribute="top" id="xwJ-Vl-gX3"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="u1g-wu-mLh"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Search" image="unselected-map" selectedImage="selected-map" id="2Zc-Ko-uq5"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hNE-Im-B3Q" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="926" y="302"/>
+            <point key="canvasLocation" x="924.63768115942037" y="301.33928571428572"/>
         </scene>
         <!--Explore-->
         <scene sceneID="ia6-yn-Hxc">
