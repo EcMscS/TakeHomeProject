@@ -81,8 +81,7 @@
 			children = (
 				1F70D81624042EBA00F8557E /* AppDelegate.swift */,
 				1F70D81824042EBA00F8557E /* SceneDelegate.swift */,
-				1F70D81A24042EBA00F8557E /* ViewController.swift */,
-				1F70D81C24042EBA00F8557E /* Main.storyboard */,
+				1F70D83824042F7D00F8557E /* Main Controller */,
 				1F70D81F24042EBE00F8557E /* Assets.xcassets */,
 				1F70D82124042EBE00F8557E /* LaunchScreen.storyboard */,
 				1F70D82424042EBE00F8557E /* Info.plist */,
@@ -97,6 +96,15 @@
 				1F70D82F24042EBE00F8557E /* Info.plist */,
 			);
 			path = TakeHomeProjectTests;
+			sourceTree = "<group>";
+		};
+		1F70D83824042F7D00F8557E /* Main Controller */ = {
+			isa = PBXGroup;
+			children = (
+				1F70D81C24042EBA00F8557E /* Main.storyboard */,
+				1F70D81A24042EBA00F8557E /* ViewController.swift */,
+			);
+			path = "Main Controller";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
