@@ -15,6 +15,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 	func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
 		// Override point for customization after application launch.
+		
+		let fontAttributes = [NSAttributedString.Key.font: UIFont.guidanceText]
+		UITabBarItem.appearance().setTitleTextAttributes(fontAttributes, for: .normal)
+		UITabBar.appearance().tintColor = UIColor.init(named: "orangeColor")
+		
 		return true
 	}
 

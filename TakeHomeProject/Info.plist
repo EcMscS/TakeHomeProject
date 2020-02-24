@@ -2,6 +2,15 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>UIAppFonts</key>
+	<array>
+		<string>apercu_mono_pro.otf</string>
+		<string>apercu-regular-pro.otf</string>
+		<string>apercu-bold-pro.otf</string>
+		<string>apercu-light-pro.otf</string>
+		<string>apercu-medium-pro.otf</string>
+		<string>apercu-black-pro.otf</string>
+	</array>
 	<key>NSLocationWhenInUseUsageDescription</key>
 	<string>Shows your location on the map and helps improve the map.</string>
 	<key>MGLMapboxAccessToken</key>

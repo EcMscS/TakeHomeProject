@@ -14,6 +14,17 @@
 		1F70D82024042EBE00F8557E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F70D81F24042EBE00F8557E /* Assets.xcassets */; };
 		1F70D82324042EBE00F8557E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F70D82124042EBE00F8557E /* LaunchScreen.storyboard */; };
 		1F70D82E24042EBE00F8557E /* TakeHomeProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F70D82D24042EBE00F8557E /* TakeHomeProjectTests.swift */; };
+		1F70D83D24044E6400F8557E /* ExploreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F70D83C24044E6400F8557E /* ExploreViewController.swift */; };
+		1F70D83F24044F1B00F8557E /* Explore.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F70D83E24044EE300F8557E /* Explore.storyboard */; };
+		1F70D841240450BB00F8557E /* Search.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F70D840240450BB00F8557E /* Search.storyboard */; };
+		1F70D8432404511100F8557E /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F70D8422404511100F8557E /* Profile.storyboard */; };
+		1F70D8482404541D00F8557E /* UIFont+Style.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F70D8472404541D00F8557E /* UIFont+Style.swift */; };
+		1F70D8612404561500F8557E /* apercu_mono_pro.otf in Resources */ = {isa = PBXBuildFile; fileRef = 1F70D85A2404561400F8557E /* apercu_mono_pro.otf */; };
+		1F70D8632404561500F8557E /* apercu-regular-pro.otf in Resources */ = {isa = PBXBuildFile; fileRef = 1F70D85C2404561400F8557E /* apercu-regular-pro.otf */; };
+		1F70D8642404561500F8557E /* apercu-bold-pro.otf in Resources */ = {isa = PBXBuildFile; fileRef = 1F70D85D2404561400F8557E /* apercu-bold-pro.otf */; };
+		1F70D8652404561500F8557E /* apercu-light-pro.otf in Resources */ = {isa = PBXBuildFile; fileRef = 1F70D85E2404561400F8557E /* apercu-light-pro.otf */; };
+		1F70D8662404561500F8557E /* apercu-medium-pro.otf in Resources */ = {isa = PBXBuildFile; fileRef = 1F70D85F2404561400F8557E /* apercu-medium-pro.otf */; };
+		1F70D8672404561500F8557E /* apercu-black-pro.otf in Resources */ = {isa = PBXBuildFile; fileRef = 1F70D8602404561400F8557E /* apercu-black-pro.otf */; };
 		DE8EF1FCB9CE63C126894420 /* Pods_TakeHomeProjectTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51C2E29DF6DAB8CFCF5414FB /* Pods_TakeHomeProjectTests.framework */; };
 		E0C964D7A0E57DFEF8CE63BD /* Pods_TakeHomeProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4EDC060E7D87C66B5C6DC2A3 /* Pods_TakeHomeProject.framework */; };
 /* End PBXBuildFile section */
@@ -40,6 +51,17 @@
 		1F70D82924042EBE00F8557E /* TakeHomeProjectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TakeHomeProjectTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F70D82D24042EBE00F8557E /* TakeHomeProjectTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TakeHomeProjectTests.swift; sourceTree = "<group>"; };
 		1F70D82F24042EBE00F8557E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1F70D83C24044E6400F8557E /* ExploreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreViewController.swift; sourceTree = "<group>"; };
+		1F70D83E24044EE300F8557E /* Explore.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Explore.storyboard; path = "/Users/arindavoodian/Desktop/TakeHomeProject/TakeHomeProject/Explore Controllers/Explore.storyboard"; sourceTree = "<absolute>"; };
+		1F70D840240450BB00F8557E /* Search.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Search.storyboard; sourceTree = "<group>"; };
+		1F70D8422404511100F8557E /* Profile.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
+		1F70D8472404541D00F8557E /* UIFont+Style.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIFont+Style.swift"; sourceTree = "<group>"; };
+		1F70D85A2404561400F8557E /* apercu_mono_pro.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = apercu_mono_pro.otf; sourceTree = "<group>"; };
+		1F70D85C2404561400F8557E /* apercu-regular-pro.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "apercu-regular-pro.otf"; sourceTree = "<group>"; };
+		1F70D85D2404561400F8557E /* apercu-bold-pro.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "apercu-bold-pro.otf"; sourceTree = "<group>"; };
+		1F70D85E2404561400F8557E /* apercu-light-pro.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "apercu-light-pro.otf"; sourceTree = "<group>"; };
+		1F70D85F2404561400F8557E /* apercu-medium-pro.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "apercu-medium-pro.otf"; sourceTree = "<group>"; };
+		1F70D8602404561400F8557E /* apercu-black-pro.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "apercu-black-pro.otf"; sourceTree = "<group>"; };
 		21D9BB299D1B3F4791BBDB15 /* Pods-TakeHomeProjectTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TakeHomeProjectTests.debug.xcconfig"; path = "Target Support Files/Pods-TakeHomeProjectTests/Pods-TakeHomeProjectTests.debug.xcconfig"; sourceTree = "<group>"; };
 		2C27891BA7484FE94FD763CF /* Pods-TakeHomeProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TakeHomeProject.debug.xcconfig"; path = "Target Support Files/Pods-TakeHomeProject/Pods-TakeHomeProject.debug.xcconfig"; sourceTree = "<group>"; };
 		42277710B2C933C77A93802C /* Pods-TakeHomeProjectTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TakeHomeProjectTests.release.xcconfig"; path = "Target Support Files/Pods-TakeHomeProjectTests/Pods-TakeHomeProjectTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -97,6 +119,8 @@
 				1F70D839240444C900F8557E /* Explore Controllers */,
 				1F70D83A240444D900F8557E /* Search Controllers */,
 				1F70D83B240444E600F8557E /* Profile Controllers */,
+				1F70D846240453E900F8557E /* Helpers */,
+				1F70D8592404561400F8557E /* Fonts */,
 				1F70D81F24042EBE00F8557E /* Assets.xcassets */,
 				1F70D82124042EBE00F8557E /* LaunchScreen.storyboard */,
 				1F70D82424042EBE00F8557E /* Info.plist */,
@@ -125,6 +149,8 @@
 		1F70D839240444C900F8557E /* Explore Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				1F70D83E24044EE300F8557E /* Explore.storyboard */,
+				1F70D83C24044E6400F8557E /* ExploreViewController.swift */,
 			);
 			path = "Explore Controllers";
 			sourceTree = "<group>";
@@ -132,6 +158,7 @@
 		1F70D83A240444D900F8557E /* Search Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				1F70D840240450BB00F8557E /* Search.storyboard */,
 			);
 			path = "Search Controllers";
 			sourceTree = "<group>";
@@ -139,8 +166,30 @@
 		1F70D83B240444E600F8557E /* Profile Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				1F70D8422404511100F8557E /* Profile.storyboard */,
 			);
 			path = "Profile Controllers";
+			sourceTree = "<group>";
+		};
+		1F70D846240453E900F8557E /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				1F70D8472404541D00F8557E /* UIFont+Style.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		1F70D8592404561400F8557E /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				1F70D85A2404561400F8557E /* apercu_mono_pro.otf */,
+				1F70D85C2404561400F8557E /* apercu-regular-pro.otf */,
+				1F70D85D2404561400F8557E /* apercu-bold-pro.otf */,
+				1F70D85E2404561400F8557E /* apercu-light-pro.otf */,
+				1F70D85F2404561400F8557E /* apercu-medium-pro.otf */,
+				1F70D8602404561400F8557E /* apercu-black-pro.otf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 		22FE71EA7923EB0A74B25D52 /* Pods */ = {
@@ -247,9 +296,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F70D8432404511100F8557E /* Profile.storyboard in Resources */,
+				1F70D83F24044F1B00F8557E /* Explore.storyboard in Resources */,
+				1F70D8632404561500F8557E /* apercu-regular-pro.otf in Resources */,
 				1F70D82324042EBE00F8557E /* LaunchScreen.storyboard in Resources */,
+				1F70D8642404561500F8557E /* apercu-bold-pro.otf in Resources */,
 				1F70D82024042EBE00F8557E /* Assets.xcassets in Resources */,
+				1F70D8612404561500F8557E /* apercu_mono_pro.otf in Resources */,
 				1F70D81E24042EBA00F8557E /* Main.storyboard in Resources */,
+				1F70D8662404561500F8557E /* apercu-medium-pro.otf in Resources */,
+				1F70D8652404561500F8557E /* apercu-light-pro.otf in Resources */,
+				1F70D841240450BB00F8557E /* Search.storyboard in Resources */,
+				1F70D8672404561500F8557E /* apercu-black-pro.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -331,8 +389,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F70D83D24044E6400F8557E /* ExploreViewController.swift in Sources */,
 				1F70D81B24042EBA00F8557E /* ViewController.swift in Sources */,
 				1F70D81724042EBA00F8557E /* AppDelegate.swift in Sources */,
+				1F70D8482404541D00F8557E /* UIFont+Style.swift in Sources */,
 				1F70D81924042EBA00F8557E /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
