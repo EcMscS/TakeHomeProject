@@ -27,6 +27,12 @@
 		1F70D8672404561500F8557E /* apercu-black-pro.otf in Resources */ = {isa = PBXBuildFile; fileRef = 1F70D8602404561400F8557E /* apercu-black-pro.otf */; };
 		1F70D86A2404A5E500F8557E /* ExplorePreviewCardCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F70D8692404A5E500F8557E /* ExplorePreviewCardCollectionViewCell.swift */; };
 		1F70D8722405685600F8557E /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F70D8712405685600F8557E /* SearchViewController.swift */; };
+		1F70D8752405837400F8557E /* PreviewList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F70D8742405837400F8557E /* PreviewList.swift */; };
+		1F70D877240584AF00F8557E /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F70D876240584AF00F8557E /* Place.swift */; };
+		1F70D879240584FB00F8557E /* Score.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F70D878240584FB00F8557E /* Score.swift */; };
+		1F70D87B2405878A00F8557E /* DeliveryService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F70D87A2405878A00F8557E /* DeliveryService.swift */; };
+		1F70D87D24058C7600F8557E /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F70D87C24058C7600F8557E /* Item.swift */; };
+		1F70D87F24058D9600F8557E /* UserAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F70D87E24058D9600F8557E /* UserAuth.swift */; };
 		DE8EF1FCB9CE63C126894420 /* Pods_TakeHomeProjectTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51C2E29DF6DAB8CFCF5414FB /* Pods_TakeHomeProjectTests.framework */; };
 		E0C964D7A0E57DFEF8CE63BD /* Pods_TakeHomeProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4EDC060E7D87C66B5C6DC2A3 /* Pods_TakeHomeProject.framework */; };
 /* End PBXBuildFile section */
@@ -66,6 +72,12 @@
 		1F70D8602404561400F8557E /* apercu-black-pro.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "apercu-black-pro.otf"; sourceTree = "<group>"; };
 		1F70D8692404A5E500F8557E /* ExplorePreviewCardCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExplorePreviewCardCollectionViewCell.swift; sourceTree = "<group>"; };
 		1F70D8712405685600F8557E /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		1F70D8742405837400F8557E /* PreviewList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewList.swift; sourceTree = "<group>"; };
+		1F70D876240584AF00F8557E /* Place.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
+		1F70D878240584FB00F8557E /* Score.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Score.swift; sourceTree = "<group>"; };
+		1F70D87A2405878A00F8557E /* DeliveryService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeliveryService.swift; sourceTree = "<group>"; };
+		1F70D87C24058C7600F8557E /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		1F70D87E24058D9600F8557E /* UserAuth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAuth.swift; sourceTree = "<group>"; };
 		21D9BB299D1B3F4791BBDB15 /* Pods-TakeHomeProjectTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TakeHomeProjectTests.debug.xcconfig"; path = "Target Support Files/Pods-TakeHomeProjectTests/Pods-TakeHomeProjectTests.debug.xcconfig"; sourceTree = "<group>"; };
 		2C27891BA7484FE94FD763CF /* Pods-TakeHomeProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TakeHomeProject.debug.xcconfig"; path = "Target Support Files/Pods-TakeHomeProject/Pods-TakeHomeProject.debug.xcconfig"; sourceTree = "<group>"; };
 		42277710B2C933C77A93802C /* Pods-TakeHomeProjectTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TakeHomeProjectTests.release.xcconfig"; path = "Target Support Files/Pods-TakeHomeProjectTests/Pods-TakeHomeProjectTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -119,6 +131,7 @@
 			children = (
 				1F70D81624042EBA00F8557E /* AppDelegate.swift */,
 				1F70D81824042EBA00F8557E /* SceneDelegate.swift */,
+				1F70D873240582D400F8557E /* Models */,
 				1F70D83824042F7D00F8557E /* Main Controller */,
 				1F70D839240444C900F8557E /* Explore Controllers */,
 				1F70D83A240444D900F8557E /* Search Controllers */,
@@ -204,6 +217,19 @@
 				1F70D8692404A5E500F8557E /* ExplorePreviewCardCollectionViewCell.swift */,
 			);
 			path = "Explore Collection View Cells";
+			sourceTree = "<group>";
+		};
+		1F70D873240582D400F8557E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				1F70D8742405837400F8557E /* PreviewList.swift */,
+				1F70D876240584AF00F8557E /* Place.swift */,
+				1F70D878240584FB00F8557E /* Score.swift */,
+				1F70D87A2405878A00F8557E /* DeliveryService.swift */,
+				1F70D87C24058C7600F8557E /* Item.swift */,
+				1F70D87E24058D9600F8557E /* UserAuth.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		22FE71EA7923EB0A74B25D52 /* Pods */ = {
@@ -405,9 +431,15 @@
 			files = (
 				1F70D83D24044E6400F8557E /* ExploreViewController.swift in Sources */,
 				1F70D8722405685600F8557E /* SearchViewController.swift in Sources */,
+				1F70D8752405837400F8557E /* PreviewList.swift in Sources */,
 				1F70D81B24042EBA00F8557E /* ViewController.swift in Sources */,
+				1F70D87D24058C7600F8557E /* Item.swift in Sources */,
+				1F70D879240584FB00F8557E /* Score.swift in Sources */,
+				1F70D87F24058D9600F8557E /* UserAuth.swift in Sources */,
 				1F70D81724042EBA00F8557E /* AppDelegate.swift in Sources */,
 				1F70D8482404541D00F8557E /* UIFont+Style.swift in Sources */,
+				1F70D87B2405878A00F8557E /* DeliveryService.swift in Sources */,
+				1F70D877240584AF00F8557E /* Place.swift in Sources */,
 				1F70D81924042EBA00F8557E /* SceneDelegate.swift in Sources */,
 				1F70D86A2404A5E500F8557E /* ExplorePreviewCardCollectionViewCell.swift in Sources */,
 			);
