@@ -34,6 +34,8 @@ class SearchViewController: UIViewController, MGLMapViewDelegate {
 	}
 	
 	func setupMapView() {
+		mapView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
+		mapView.showsUserLocation = true
 		mapView.delegate = self
 	}
 	
@@ -41,6 +43,7 @@ class SearchViewController: UIViewController, MGLMapViewDelegate {
 		guard let userLocation = userLocation else { return }
 		mapView.setCenter(userLocation, zoomLevel: 13, animated: true)
 	}
+	
 
 }
 
