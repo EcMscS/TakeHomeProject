@@ -4,6 +4,7 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -12,16 +13,60 @@
             <objects>
                 <viewController id="fwO-2b-jma" customClass="ExploreViewController" customModule="TakeHomeProject" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="fgI-WF-Yfd">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="UEQ-Cm-uJe">
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Pnf-da-MKE">
+                                    <size key="itemSize" width="395" height="200"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="previewCardCell" id="QES-Y8-fMg" customClass="ExplorePreviewCardCollectionViewCell" customModule="TakeHomeProject" customModuleProvider="target">
+                                        <rect key="frame" x="9.5" y="0.0" width="395" height="200"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="kCP-LD-gG0">
+                                            <rect key="frame" x="0.0" y="0.0" width="395" height="200"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wKY-OY-f7j">
+                                                    <rect key="frame" x="8" y="8" width="379" height="192"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <color key="backgroundColor" systemColor="systemGrayColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                            <integer key="value" value="6"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </view>
+                                            </subviews>
+                                        </collectionViewCellContentView>
+                                        <size key="customSize" width="395" height="200"/>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="bRi-4Q-lDk" firstAttribute="trailing" secondItem="UEQ-Cm-uJe" secondAttribute="trailing" id="Gb9-TC-5X0"/>
+                            <constraint firstItem="UEQ-Cm-uJe" firstAttribute="top" secondItem="bRi-4Q-lDk" secondAttribute="top" id="KU1-eg-ZXW"/>
+                            <constraint firstItem="UEQ-Cm-uJe" firstAttribute="leading" secondItem="bRi-4Q-lDk" secondAttribute="leading" id="NDe-v4-nsq"/>
+                            <constraint firstItem="bRi-4Q-lDk" firstAttribute="bottom" secondItem="UEQ-Cm-uJe" secondAttribute="bottom" id="Pkz-cO-A1o"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="bRi-4Q-lDk"/>
                     </view>
                     <navigationItem key="navigationItem" id="qfH-89-FMC"/>
+                    <connections>
+                        <outlet property="cardCollectionView" destination="UEQ-Cm-uJe" id="Cb2-tg-Pjo"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mul-qU-Ubt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1777" y="-354"/>
+            <point key="canvasLocation" x="1776.8115942028987" y="-354.24107142857139"/>
         </scene>
         <!--Explore-->
         <scene sceneID="KrW-PA-Uaw">
