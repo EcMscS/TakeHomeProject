@@ -10,7 +10,7 @@
         <!--Search-->
         <scene sceneID="D7W-RW-YSN">
             <objects>
-                <viewController id="nxZ-mC-MJx" sceneMemberID="viewController">
+                <viewController id="nxZ-mC-MJx" customClass="SearchViewController" customModule="TakeHomeProject" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="vNh-QI-X6U">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
