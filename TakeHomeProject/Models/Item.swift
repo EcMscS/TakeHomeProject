@@ -17,6 +17,17 @@ struct Item: Codable {
 	var name: String
 	var price: Float
 	var score: Score
+	
+	enum CodingKeys: String, CodingKey {
+		case category
+		case deliveryServices = "delivery_services"
+		case description
+		case id
+		case images
+		case name
+		case price
+		case score
+	}
 }
 
 struct ItemImage: Codable {
