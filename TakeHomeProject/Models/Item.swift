@@ -9,14 +9,14 @@
 import Foundation
 
 struct Item: Codable {
-	var category: String
-	var deliveryServices: [DeliveryService]
-	var description: String
-	var id: String
-	var images: [ItemImage]
-	var name: String
-	var price: Float
-	var score: Score
+	var category: String? = ""
+	var deliveryServices = [DeliveryService]()
+	var description: String? = ""
+	var id: String? = ""
+	var images = [ItemImage]()
+	var name: String? = ""
+	var price: Double? = 0
+	var score: Score?
 	
 	enum CodingKeys: String, CodingKey {
 		case category
@@ -31,6 +31,6 @@ struct Item: Codable {
 }
 
 struct ItemImage: Codable {
-	var credits: String
-	var url: String
+	var credits: String? = ""
+	var url: String? = ""
 }

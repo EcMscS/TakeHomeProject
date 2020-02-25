@@ -9,6 +9,6 @@
 import Foundation
 
 struct Score: Codable {
-	var color: String
-	var value: Double
+	var color: String? = ""
+	var value: Double? = 0
 }

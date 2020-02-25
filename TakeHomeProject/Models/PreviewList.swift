@@ -9,11 +9,5 @@
 import Foundation
 
 struct PreviewList: Codable {
-	let category: String
-	let description: String
-	let id: String
-	let name: String
-	let place: Place
-	let price: Float
-	let score: Score
+	var items = [PreviewListItem]()
 }

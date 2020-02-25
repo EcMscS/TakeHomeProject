@@ -9,10 +9,10 @@
 import Foundation
 
 struct DeliveryService: Codable {
-	var eta: ETA
-	var fee: Float
-	var minimumOrder: Float
-	var name: String
+	var eta = ETA()
+	var fee: Double? = 0
+	var minimumOrder: Double? = 0
+	var name: String? = ""
 	
 	enum CodingKeys: String, CodingKey {
 		case eta
@@ -23,6 +23,6 @@ struct DeliveryService: Codable {
 }
 
 struct ETA: Codable {
-	var max: Int
-	var min: Int
+	var max: Int?
+	var min: Int?
 }

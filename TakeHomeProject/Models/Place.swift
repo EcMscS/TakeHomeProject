@@ -9,9 +9,9 @@
 import Foundation
 
 struct Place: Codable {
-	var distanceInMiles: Float
-	var name: String
-	var openNow: Bool
+	var distanceInMiles: Double? = 0
+	var name: String? = ""
+	var openNow: Bool? = false
 	
 	enum CodingKeys: String, CodingKey {
 		case distanceInMiles = "distance_miles"
