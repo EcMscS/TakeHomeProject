@@ -34,6 +34,9 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Search" image="unselected-map" selectedImage="selected-map" id="2Zc-Ko-uq5"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="mapView" destination="cQL-R5-eC9" id="pQ6-sI-Lt9"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hNE-Im-B3Q" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
