@@ -223,10 +223,10 @@
 			children = (
 				1F70D880240599A700F8557E /* PreviewList.swift */,
 				1F70D8742405837400F8557E /* PreviewListItem.swift */,
+				1F70D87C24058C7600F8557E /* Item.swift */,
 				1F70D876240584AF00F8557E /* Place.swift */,
 				1F70D878240584FB00F8557E /* Score.swift */,
 				1F70D87A2405878A00F8557E /* DeliveryService.swift */,
-				1F70D87C24058C7600F8557E /* Item.swift */,
 				1F70D87E24058D9600F8557E /* UserAuth.swift */,
 			);
 			path = Models;
