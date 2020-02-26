@@ -10,19 +10,22 @@ import Foundation
 
 class Network {
 	
-	static func sendRequest() {
+	static func createAccount(cellPhoneNumber: String, completion: @escaping (_ data: UserAuth)->()) {
 		
 		let sessionConfig = URLSessionConfiguration.default
 		let session = URLSession(configuration: sessionConfig, delegate: nil, delegateQueue: nil)
 		
-		guard var URL = URL(string: "http://ios-test-proj.mizo.co/load") else {return}
-		let URLParams = [
-			"item_id": "test_id_3",
-		]
-		
-		URL = URL.appendingQueryParameters(URLParams)
-		var request = URLRequest(url: URL)
-		request.httpMethod = "GET"
+		guard let URL = URL(string: "http://ios-test-proj.mizo.co/sign_in") else {return}
+        var request = URLRequest(url: URL)
+        request.httpMethod = "POST"
+
+        request.addValue("application/json; charset=utf-8", forHTTPHeaderField: "Content-Type")
+
+        let bodyObject: [String : Any] = [
+            "phone_number": "\(cellPhoneNumber)"
+        ]
+        request.httpBody = try! JSONSerialization.data(withJSONObject: bodyObject, options: [])
+
 
 		let task = session.dataTask(with: request, completionHandler: { (data: Data?, response: URLResponse?, error: Error?) -> Void in
 			if (error == nil) {
@@ -37,8 +40,8 @@ class Network {
 				
 				do {
 					let decoder = JSONDecoder()
-					let user = try decoder.decode(Item.self, from: data)
-					print(user.deliveryServices[0].eta?.max)
+					let userData = try decoder.decode(UserAuth.self, from: data)
+					completion(userData)
 				} catch {
 					print(error.localizedDescription)
 				}
