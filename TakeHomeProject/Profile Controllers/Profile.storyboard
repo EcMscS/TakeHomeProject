@@ -32,39 +32,64 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4sd-CC-ucR">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4sd-CC-ucR">
                                 <rect key="frame" x="20" y="519" width="374" height="255"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bRv-mz-Dv0">
-                                        <rect key="frame" x="23" y="172" width="329" height="60"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="backgroundColor" name="Color"/>
-                                        <state key="normal" title="Button">
-                                            <color key="titleColor" name="orangeColor"/>
-                                        </state>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                <integer key="value" value="8"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
-                                    </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Did you change your phone number?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G3K-d7-Iut">
-                                        <rect key="frame" x="23" y="77" width="282" height="21"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" name="Color"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Cell Phone" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lKk-cg-3bY">
-                                        <rect key="frame" x="23" y="30" width="329" height="34"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="textColor" name="Color"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                    </textField>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rbd-tE-jF9">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="255"/>
+                                        <subviews>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Cell Phone" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lKk-cg-3bY">
+                                                <rect key="frame" x="15" y="38" width="344" height="30"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="30" id="NTg-Xe-1JQ"/>
+                                                </constraints>
+                                                <color key="textColor" name="Color"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bRv-mz-Dv0">
+                                                <rect key="frame" x="15" y="176" width="344" height="50"/>
+                                                <color key="backgroundColor" name="Color"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="t5o-50-iHY"/>
+                                                </constraints>
+                                                <state key="normal" title="Button">
+                                                    <color key="titleColor" name="orangeColor"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="8"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Did you change your phone number?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G3K-d7-Iut">
+                                                <rect key="frame" x="15" y="80" width="344" height="21"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" name="Color"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="G3K-d7-Iut" secondAttribute="trailing" constant="15" id="0pJ-dI-vF4"/>
+                                            <constraint firstItem="G3K-d7-Iut" firstAttribute="leading" secondItem="rbd-tE-jF9" secondAttribute="leading" constant="15" id="59M-s3-A0T"/>
+                                            <constraint firstAttribute="trailing" secondItem="lKk-cg-3bY" secondAttribute="trailing" constant="15" id="92w-58-O4h"/>
+                                            <constraint firstItem="bRv-mz-Dv0" firstAttribute="top" secondItem="G3K-d7-Iut" secondAttribute="bottom" constant="75" id="E2B-cR-ts2"/>
+                                            <constraint firstItem="G3K-d7-Iut" firstAttribute="top" secondItem="lKk-cg-3bY" secondAttribute="bottom" constant="12" id="MWU-8m-pff"/>
+                                            <constraint firstItem="lKk-cg-3bY" firstAttribute="leading" secondItem="rbd-tE-jF9" secondAttribute="leading" constant="15" id="Qep-F4-9Al"/>
+                                            <constraint firstItem="lKk-cg-3bY" firstAttribute="top" secondItem="rbd-tE-jF9" secondAttribute="top" constant="38" id="Rl2-lh-woJ"/>
+                                            <constraint firstItem="bRv-mz-Dv0" firstAttribute="leading" secondItem="rbd-tE-jF9" secondAttribute="leading" constant="15" id="U4i-5Q-Q45"/>
+                                            <constraint firstAttribute="trailing" secondItem="bRv-mz-Dv0" secondAttribute="trailing" constant="15" id="i9O-FF-PxF"/>
+                                        </constraints>
+                                    </view>
                                 </subviews>
                                 <color key="backgroundColor" name="orangeColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="rbd-tE-jF9" secondAttribute="bottom" id="Ewc-hL-NTv"/>
+                                    <constraint firstItem="rbd-tE-jF9" firstAttribute="leading" secondItem="4sd-CC-ucR" secondAttribute="leading" id="LkC-Ze-dpj"/>
+                                    <constraint firstAttribute="height" constant="255" id="Nl7-e8-vi0"/>
+                                    <constraint firstAttribute="trailing" secondItem="rbd-tE-jF9" secondAttribute="trailing" id="T5x-EN-dUJ"/>
+                                    <constraint firstItem="rbd-tE-jF9" firstAttribute="top" secondItem="4sd-CC-ucR" secondAttribute="top" id="YhK-0S-Zae"/>
+                                </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                                         <integer key="value" value="8"/>
@@ -72,7 +97,12 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" red="0.5" green="0.5" blue="0.5" alpha="0.62146832191780821" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="wp2-8v-CL2" firstAttribute="bottom" secondItem="4sd-CC-ucR" secondAttribute="bottom" constant="88" id="MBU-Rx-c3L"/>
+                            <constraint firstItem="4sd-CC-ucR" firstAttribute="leading" secondItem="wp2-8v-CL2" secondAttribute="leading" constant="20" id="S0P-qh-hr0"/>
+                            <constraint firstItem="wp2-8v-CL2" firstAttribute="trailing" secondItem="4sd-CC-ucR" secondAttribute="trailing" constant="20" id="XoF-bS-vRm"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="wp2-8v-CL2"/>
                     </view>
                     <connections>
