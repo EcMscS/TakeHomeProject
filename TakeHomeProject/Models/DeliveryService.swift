@@ -9,7 +9,7 @@
 import Foundation
 
 struct DeliveryService: Codable {
-	var eta = ETA()
+	var eta: ETA?
 	var fee: Double? = 0
 	var minimumOrder: Double? = 0
 	var name: String? = ""
