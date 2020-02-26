@@ -24,10 +24,10 @@
             </objects>
             <point key="canvasLocation" x="1842.0289855072465" y="877.90178571428567"/>
         </scene>
-        <!--View Controller-->
+        <!--Profile Pop Up View Controller-->
         <scene sceneID="8lY-Vf-svm">
             <objects>
-                <viewController id="ngE-2c-bsI" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="profilePopUp" id="ngE-2c-bsI" customClass="ProfilePopUpViewController" customModule="TakeHomeProject" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="YD4-KO-axw">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -75,6 +75,9 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="wp2-8v-CL2"/>
                     </view>
+                    <connections>
+                        <outlet property="cellPhoneTextField" destination="lKk-cg-3bY" id="7vq-SU-bJr"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="I2L-4K-FMo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1F43C1DC2406CC58004F0781 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F70D8872406C59100F8557E /* Profile.storyboard */; };
+		1F43C1DE2406CD1D004F0781 /* ProfilePopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F43C1DD2406CD1D004F0781 /* ProfilePopUpViewController.swift */; };
 		1F70D81724042EBA00F8557E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F70D81624042EBA00F8557E /* AppDelegate.swift */; };
 		1F70D81924042EBA00F8557E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F70D81824042EBA00F8557E /* SceneDelegate.swift */; };
 		1F70D81E24042EBA00F8557E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F70D81C24042EBA00F8557E /* Main.storyboard */; };
@@ -50,6 +51,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1F43C1DD2406CD1D004F0781 /* ProfilePopUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePopUpViewController.swift; sourceTree = "<group>"; };
 		1F70D81324042EBA00F8557E /* TakeHomeProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TakeHomeProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F70D81624042EBA00F8557E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1F70D81824042EBA00F8557E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -190,6 +192,7 @@
 			children = (
 				1F70D8872406C59100F8557E /* Profile.storyboard */,
 				1F70D8892406C59800F8557E /* ProfileViewController.swift */,
+				1F43C1DD2406CD1D004F0781 /* ProfilePopUpViewController.swift */,
 			);
 			path = "Profile Controllers";
 			sourceTree = "<group>";
@@ -449,6 +452,7 @@
 				1F70D877240584AF00F8557E /* Place.swift in Sources */,
 				1F70D88A2406C59800F8557E /* ProfileViewController.swift in Sources */,
 				1F70D81924042EBA00F8557E /* SceneDelegate.swift in Sources */,
+				1F43C1DE2406CD1D004F0781 /* ProfilePopUpViewController.swift in Sources */,
 				1F70D86A2404A5E500F8557E /* ExplorePreviewCardCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
