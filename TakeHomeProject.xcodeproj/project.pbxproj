@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1F43C1DC2406CC58004F0781 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F70D8872406C59100F8557E /* Profile.storyboard */; };
 		1F70D81724042EBA00F8557E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F70D81624042EBA00F8557E /* AppDelegate.swift */; };
 		1F70D81924042EBA00F8557E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F70D81824042EBA00F8557E /* SceneDelegate.swift */; };
 		1F70D81E24042EBA00F8557E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F70D81C24042EBA00F8557E /* Main.storyboard */; };
@@ -33,7 +34,6 @@
 		1F70D881240599A700F8557E /* PreviewList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F70D880240599A700F8557E /* PreviewList.swift */; };
 		1F70D8822405B6C000F8557E /* PreviewListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F70D8742405837400F8557E /* PreviewListItem.swift */; };
 		1F70D8862406C58400F8557E /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F70D8852406C58400F8557E /* UIView+Extensions.swift */; };
-		1F70D8882406C59100F8557E /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F70D8872406C59100F8557E /* Profile.storyboard */; };
 		1F70D88A2406C59800F8557E /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F70D8892406C59800F8557E /* ProfileViewController.swift */; };
 		DE8EF1FCB9CE63C126894420 /* Pods_TakeHomeProjectTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51C2E29DF6DAB8CFCF5414FB /* Pods_TakeHomeProjectTests.framework */; };
 		E0C964D7A0E57DFEF8CE63BD /* Pods_TakeHomeProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4EDC060E7D87C66B5C6DC2A3 /* Pods_TakeHomeProject.framework */; };
@@ -348,7 +348,7 @@
 				1F70D8642404561500F8557E /* apercu-bold-pro.otf in Resources */,
 				1F70D82024042EBE00F8557E /* Assets.xcassets in Resources */,
 				1F70D8612404561500F8557E /* apercu_mono_pro.otf in Resources */,
-				1F70D8882406C59100F8557E /* Profile.storyboard in Resources */,
+				1F43C1DC2406CC58004F0781 /* Profile.storyboard in Resources */,
 				1F70D81E24042EBA00F8557E /* Main.storyboard in Resources */,
 				1F70D8662404561500F8557E /* apercu-medium-pro.otf in Resources */,
 				1F70D8652404561500F8557E /* apercu-light-pro.otf in Resources */,
