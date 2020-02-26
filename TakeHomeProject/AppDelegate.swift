@@ -38,6 +38,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 		let fontAttributes = [NSAttributedString.Key.font: UIFont.guidanceText]
 		UITabBarItem.appearance().setTitleTextAttributes(fontAttributes, for: .normal)
 		UITabBar.appearance().tintColor = UIColor.init(named: "orangeColor")
+		UITabBar.appearance().backgroundColor = UIColor(named: "Color")
 	}
 
 
