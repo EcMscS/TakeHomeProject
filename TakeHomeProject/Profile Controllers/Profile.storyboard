@@ -138,7 +138,7 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" red="0.5" green="0.5" blue="0.5" alpha="0.62146832191780821" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.30602525684931509" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="wp2-8v-CL2" firstAttribute="bottom" secondItem="4sd-CC-ucR" secondAttribute="bottom" constant="88" id="MBU-Rx-c3L"/>
                             <constraint firstItem="4sd-CC-ucR" firstAttribute="leading" secondItem="wp2-8v-CL2" secondAttribute="leading" constant="15" id="S0P-qh-hr0"/>
