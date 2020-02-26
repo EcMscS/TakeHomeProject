@@ -94,6 +94,49 @@ class Network {
 		session.finishTasksAndInvalidate()
 	}
 	
+	static func fetchItemDetails(itemID: String, completion: @escaping (_ data: Item)->()) {
+		
+		let sessionConfig = URLSessionConfiguration.default
+		let session = URLSession(configuration: sessionConfig, delegate: nil, delegateQueue: nil)
+		
+		guard var URL = URL(string: "http://ios-test-proj.mizo.co/load") else {return}
+        
+		let URLParams = [
+            "item_id": "\(itemID)",
+        ]
+		
+        URL = URL.appendingQueryParameters(URLParams)
+        var request = URLRequest(url: URL)
+        request.httpMethod = "GET"
+
+		let task = session.dataTask(with: request, completionHandler: { (data: Data?, response: URLResponse?, error: Error?) -> Void in
+			if (error == nil) {
+				// Success
+				let statusCode = (response as! HTTPURLResponse).statusCode
+				print("URL Session Task Succeeded: HTTP \(statusCode)")
+							
+				guard let data = data else {
+				print("Error with data")
+				return
+				}
+				
+				do {
+					let decoder = JSONDecoder()
+					let itemData = try decoder.decode(Item.self, from: data)
+					completion(itemData)
+				} catch {
+					print(error.localizedDescription)
+				}
+				
+			}
+			else {
+				print("URL Session Task Failed: %@", error!.localizedDescription)
+			}
+		})
+		task.resume()
+		session.finishTasksAndInvalidate()
+	}
+	
 	
 	
 }
