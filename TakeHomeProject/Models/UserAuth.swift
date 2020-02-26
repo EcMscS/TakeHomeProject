@@ -9,8 +9,8 @@
 import Foundation
 
 struct UserAuth: Codable {
-	var userID: String? = nil
-	var authToken: String? = nil
+	var userID: String = ""
+	var authToken: String = ""
 	
 	enum CodingKeys: String, CodingKey {
 		case userID = "user_id"

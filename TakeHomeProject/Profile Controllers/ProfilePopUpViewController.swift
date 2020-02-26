@@ -28,7 +28,11 @@ class ProfilePopUpViewController: UIViewController {
 					
 					Network.createAccount(cellPhoneNumber: cellPhoneNumber) { (userAuthData) in
 						print(userAuthData.authToken)
-						Keychain.saveToKeychain()
+						Keychain.saveToKeychain(stringValue: userAuthData.userID, forKey: Keychain.UserAuthData.userID)
+						Keychain.saveToKeychain(stringValue: userAuthData.authToken, forKey: Keychain.UserAuthData.authToken)
+						DispatchQueue.main.async {
+							self.dismiss(animated: true, completion: nil)
+						}
 					}
 					
 				} else {

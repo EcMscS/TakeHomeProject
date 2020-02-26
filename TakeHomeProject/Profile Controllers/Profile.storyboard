@@ -13,9 +13,47 @@
             <objects>
                 <viewController storyboardIdentifier="profileViewController" id="BYZ-38-t0r" customClass="ProfileViewController" customModule="TakeHomeProject" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="Wz4-nA-RPg">
+                                <rect key="frame" x="20" y="79" width="374" height="409"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="user_signed_in" translatesAutoresizingMaskIntoConstraints="NO" id="dns-ZK-SIb">
+                                        <rect key="frame" x="13" y="0.0" width="348" height="312"/>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FvO-3R-gdI">
+                                        <rect key="frame" x="30" y="362" width="314" height="47"/>
+                                        <color key="backgroundColor" name="Color"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="47" id="WQX-XY-YQK"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                                        <state key="normal" title="Clear Auth State">
+                                            <color key="titleColor" name="orangeColor"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="8"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="clearAuthStateTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fi9-bD-G7i"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="FvO-3R-gdI" firstAttribute="leading" secondItem="Wz4-nA-RPg" secondAttribute="leading" constant="30" id="3Ay-jB-WYm"/>
+                                    <constraint firstAttribute="trailing" secondItem="FvO-3R-gdI" secondAttribute="trailing" constant="30" id="YTx-JY-WFA"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" name="orangeColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Wz4-nA-RPg" secondAttribute="trailing" constant="20" id="BBz-wK-Gh9"/>
+                            <constraint firstItem="Wz4-nA-RPg" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="35" id="BgQ-1g-QWk"/>
+                            <constraint firstItem="Wz4-nA-RPg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="O5y-fD-73e"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="Qmb-Cb-0e4"/>
@@ -33,13 +71,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4sd-CC-ucR">
-                                <rect key="frame" x="20" y="519" width="374" height="255"/>
+                                <rect key="frame" x="15" y="519" width="384" height="255"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rbd-tE-jF9">
-                                        <rect key="frame" x="0.0" y="0.0" width="374" height="255"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="384" height="255"/>
                                         <subviews>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Cell Phone" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lKk-cg-3bY">
-                                                <rect key="frame" x="15" y="38" width="344" height="30"/>
+                                                <rect key="frame" x="15" y="38" width="354" height="30"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="30" id="NTg-Xe-1JQ"/>
                                                 </constraints>
@@ -48,12 +86,12 @@
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bRv-mz-Dv0">
-                                                <rect key="frame" x="15" y="176" width="344" height="50"/>
+                                                <rect key="frame" x="15" y="176" width="354" height="50"/>
                                                 <color key="backgroundColor" name="Color"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="50" id="t5o-50-iHY"/>
                                                 </constraints>
-                                                <state key="normal" title="Button">
+                                                <state key="normal" title="Create Account">
                                                     <color key="titleColor" name="orangeColor"/>
                                                 </state>
                                                 <userDefinedRuntimeAttributes>
@@ -66,7 +104,7 @@
                                                 </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Did you change your phone number?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G3K-d7-Iut">
-                                                <rect key="frame" x="15" y="80" width="344" height="21"/>
+                                                <rect key="frame" x="15" y="80" width="354" height="21"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" name="Color"/>
                                                 <nil key="highlightedColor"/>
@@ -103,8 +141,8 @@
                         <color key="backgroundColor" red="0.5" green="0.5" blue="0.5" alpha="0.62146832191780821" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="wp2-8v-CL2" firstAttribute="bottom" secondItem="4sd-CC-ucR" secondAttribute="bottom" constant="88" id="MBU-Rx-c3L"/>
-                            <constraint firstItem="4sd-CC-ucR" firstAttribute="leading" secondItem="wp2-8v-CL2" secondAttribute="leading" constant="20" id="S0P-qh-hr0"/>
-                            <constraint firstItem="wp2-8v-CL2" firstAttribute="trailing" secondItem="4sd-CC-ucR" secondAttribute="trailing" constant="20" id="XoF-bS-vRm"/>
+                            <constraint firstItem="4sd-CC-ucR" firstAttribute="leading" secondItem="wp2-8v-CL2" secondAttribute="leading" constant="15" id="S0P-qh-hr0"/>
+                            <constraint firstItem="wp2-8v-CL2" firstAttribute="trailing" secondItem="4sd-CC-ucR" secondAttribute="trailing" constant="15" id="XoF-bS-vRm"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="wp2-8v-CL2"/>
                     </view>
@@ -119,12 +157,12 @@
         <!--Profile-->
         <scene sceneID="20p-Eq-Wt6">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="fJi-6X-jIu" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="fJi-6X-jIu" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Profile" image="unselected-profile" selectedImage="selected-profile" id="xJN-4n-yN1"/>
                     <toolbarItems/>
-                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics" translucent="NO"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="7dn-8y-u6z">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -140,6 +178,7 @@
     <resources>
         <image name="selected-profile" width="24" height="24"/>
         <image name="unselected-profile" width="24" height="24"/>
+        <image name="user_signed_in" width="174" height="156"/>
         <namedColor name="Color">
             <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>

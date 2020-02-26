@@ -7,15 +7,36 @@
 //
 
 import Foundation
+import KeychainSwift
 
 class Keychain {
 	
-	static func saveToKeychain() {
-		
+	struct UserAuthData {
+		static let userID = "com.userID.TakeHomeProject"
+		static let authToken = "com.authToken.TakeHomeProject"
 	}
 	
-	static func retieveFromKeychain() {
-		
+	static func saveToKeychain(stringValue: String, forKey: String) {
+		let keychain = KeychainSwift()
+		keychain.set(stringValue, forKey: forKey, withAccess: .accessibleWhenUnlocked)
+	}
+	
+	static func retieveFromKeychain(forKey key: String) -> String? {
+		let keychain = KeychainSwift()
+		if let keyData = keychain.get(key) {
+			return keyData
+		}
+		return nil
+	}
+	
+	static func removeFromKeychain(forKey key: String) {
+		let keychain = KeychainSwift()
+		keychain.delete(key)
+	}
+	
+	static func clearKeychain() {
+		let keychain = KeychainSwift()
+		keychain.clear()
 	}
 	
 }
