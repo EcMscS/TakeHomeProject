@@ -16,7 +16,6 @@
 		1F70D83D24044E6400F8557E /* ExploreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F70D83C24044E6400F8557E /* ExploreViewController.swift */; };
 		1F70D83F24044F1B00F8557E /* Explore.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F70D83E24044EE300F8557E /* Explore.storyboard */; };
 		1F70D841240450BB00F8557E /* Search.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F70D840240450BB00F8557E /* Search.storyboard */; };
-		1F70D8432404511100F8557E /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F70D8422404511100F8557E /* Profile.storyboard */; };
 		1F70D8482404541D00F8557E /* UIFont+Style.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F70D8472404541D00F8557E /* UIFont+Style.swift */; };
 		1F70D8612404561500F8557E /* apercu_mono_pro.otf in Resources */ = {isa = PBXBuildFile; fileRef = 1F70D85A2404561400F8557E /* apercu_mono_pro.otf */; };
 		1F70D8632404561500F8557E /* apercu-regular-pro.otf in Resources */ = {isa = PBXBuildFile; fileRef = 1F70D85C2404561400F8557E /* apercu-regular-pro.otf */; };
@@ -33,6 +32,9 @@
 		1F70D87F24058D9600F8557E /* UserAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F70D87E24058D9600F8557E /* UserAuth.swift */; };
 		1F70D881240599A700F8557E /* PreviewList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F70D880240599A700F8557E /* PreviewList.swift */; };
 		1F70D8822405B6C000F8557E /* PreviewListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F70D8742405837400F8557E /* PreviewListItem.swift */; };
+		1F70D8862406C58400F8557E /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F70D8852406C58400F8557E /* UIView+Extensions.swift */; };
+		1F70D8882406C59100F8557E /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F70D8872406C59100F8557E /* Profile.storyboard */; };
+		1F70D88A2406C59800F8557E /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F70D8892406C59800F8557E /* ProfileViewController.swift */; };
 		DE8EF1FCB9CE63C126894420 /* Pods_TakeHomeProjectTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51C2E29DF6DAB8CFCF5414FB /* Pods_TakeHomeProjectTests.framework */; };
 		E0C964D7A0E57DFEF8CE63BD /* Pods_TakeHomeProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4EDC060E7D87C66B5C6DC2A3 /* Pods_TakeHomeProject.framework */; };
 /* End PBXBuildFile section */
@@ -61,7 +63,6 @@
 		1F70D83C24044E6400F8557E /* ExploreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreViewController.swift; sourceTree = "<group>"; };
 		1F70D83E24044EE300F8557E /* Explore.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Explore.storyboard; path = "/Users/arindavoodian/Desktop/TakeHomeProject/TakeHomeProject/Explore Controllers/Explore.storyboard"; sourceTree = "<absolute>"; };
 		1F70D840240450BB00F8557E /* Search.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Search.storyboard; sourceTree = "<group>"; };
-		1F70D8422404511100F8557E /* Profile.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
 		1F70D8472404541D00F8557E /* UIFont+Style.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIFont+Style.swift"; sourceTree = "<group>"; };
 		1F70D85A2404561400F8557E /* apercu_mono_pro.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = apercu_mono_pro.otf; sourceTree = "<group>"; };
 		1F70D85C2404561400F8557E /* apercu-regular-pro.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "apercu-regular-pro.otf"; sourceTree = "<group>"; };
@@ -78,6 +79,9 @@
 		1F70D87C24058C7600F8557E /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		1F70D87E24058D9600F8557E /* UserAuth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAuth.swift; sourceTree = "<group>"; };
 		1F70D880240599A700F8557E /* PreviewList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewList.swift; sourceTree = "<group>"; };
+		1F70D8852406C58400F8557E /* UIView+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
+		1F70D8872406C59100F8557E /* Profile.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
+		1F70D8892406C59800F8557E /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		21D9BB299D1B3F4791BBDB15 /* Pods-TakeHomeProjectTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TakeHomeProjectTests.debug.xcconfig"; path = "Target Support Files/Pods-TakeHomeProjectTests/Pods-TakeHomeProjectTests.debug.xcconfig"; sourceTree = "<group>"; };
 		2C27891BA7484FE94FD763CF /* Pods-TakeHomeProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TakeHomeProject.debug.xcconfig"; path = "Target Support Files/Pods-TakeHomeProject/Pods-TakeHomeProject.debug.xcconfig"; sourceTree = "<group>"; };
 		42277710B2C933C77A93802C /* Pods-TakeHomeProjectTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TakeHomeProjectTests.release.xcconfig"; path = "Target Support Files/Pods-TakeHomeProjectTests/Pods-TakeHomeProjectTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -184,7 +188,8 @@
 		1F70D83B240444E600F8557E /* Profile Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				1F70D8422404511100F8557E /* Profile.storyboard */,
+				1F70D8872406C59100F8557E /* Profile.storyboard */,
+				1F70D8892406C59800F8557E /* ProfileViewController.swift */,
 			);
 			path = "Profile Controllers";
 			sourceTree = "<group>";
@@ -193,6 +198,7 @@
 			isa = PBXGroup;
 			children = (
 				1F70D8472404541D00F8557E /* UIFont+Style.swift */,
+				1F70D8852406C58400F8557E /* UIView+Extensions.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -336,13 +342,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1F70D8432404511100F8557E /* Profile.storyboard in Resources */,
 				1F70D83F24044F1B00F8557E /* Explore.storyboard in Resources */,
 				1F70D8632404561500F8557E /* apercu-regular-pro.otf in Resources */,
 				1F70D82324042EBE00F8557E /* LaunchScreen.storyboard in Resources */,
 				1F70D8642404561500F8557E /* apercu-bold-pro.otf in Resources */,
 				1F70D82024042EBE00F8557E /* Assets.xcassets in Resources */,
 				1F70D8612404561500F8557E /* apercu_mono_pro.otf in Resources */,
+				1F70D8882406C59100F8557E /* Profile.storyboard in Resources */,
 				1F70D81E24042EBA00F8557E /* Main.storyboard in Resources */,
 				1F70D8662404561500F8557E /* apercu-medium-pro.otf in Resources */,
 				1F70D8652404561500F8557E /* apercu-light-pro.otf in Resources */,
@@ -429,6 +435,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F70D8862406C58400F8557E /* UIView+Extensions.swift in Sources */,
 				1F70D881240599A700F8557E /* PreviewList.swift in Sources */,
 				1F70D83D24044E6400F8557E /* ExploreViewController.swift in Sources */,
 				1F70D8722405685600F8557E /* SearchViewController.swift in Sources */,
@@ -440,6 +447,7 @@
 				1F70D8822405B6C000F8557E /* PreviewListItem.swift in Sources */,
 				1F70D87B2405878A00F8557E /* DeliveryService.swift in Sources */,
 				1F70D877240584AF00F8557E /* Place.swift in Sources */,
+				1F70D88A2406C59800F8557E /* ProfileViewController.swift in Sources */,
 				1F70D81924042EBA00F8557E /* SceneDelegate.swift in Sources */,
 				1F70D86A2404A5E500F8557E /* ExplorePreviewCardCollectionViewCell.swift in Sources */,
 			);
