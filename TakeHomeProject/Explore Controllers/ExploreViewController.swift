@@ -10,6 +10,8 @@ import UIKit
 
 class ExploreViewController: UIViewController {
 
+	var exploreViewPreviewListItems: [PreviewListItem] = []
+	
 	@IBOutlet weak var cardCollectionView: UICollectionView!
 	
 	override func viewDidLoad() {
@@ -17,8 +19,18 @@ class ExploreViewController: UIViewController {
 
 		cardCollectionView.delegate = self
 		cardCollectionView.dataSource = self
+		
+		populateData()
     }
     
+	fileprivate func populateData() {
+		Network.fetchPreviewListData { (previewListData) in
+			self.exploreViewPreviewListItems = previewListData
+			DispatchQueue.main.async {
+				self.cardCollectionView.reloadData()
+			}
+		}
+	}
 
 }
 
@@ -26,7 +38,7 @@ class ExploreViewController: UIViewController {
 extension ExploreViewController:  UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
 	
 	func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-		return 4
+		return exploreViewPreviewListItems.count
 	}
 	
 	func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {

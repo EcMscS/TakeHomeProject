@@ -55,6 +55,45 @@ class Network {
 		session.finishTasksAndInvalidate()
 	}
 	
+	static func fetchPreviewListData(completion: @escaping (_ data: [PreviewListItem])->()) {
+		
+		let sessionConfig = URLSessionConfiguration.default
+		let session = URLSession(configuration: sessionConfig, delegate: nil, delegateQueue: nil)
+		
+		guard let URL = URL(string: "http://ios-test-proj.mizo.co/preview_load") else {return}
+		var request = URLRequest(url: URL)
+		request.httpMethod = "GET"
+		
+		request.addValue("application/x-www-form-urlencoded; charset=utf-8", forHTTPHeaderField: "Content-Type")
+
+		let task = session.dataTask(with: request, completionHandler: { (data: Data?, response: URLResponse?, error: Error?) -> Void in
+			if (error == nil) {
+				// Success
+				let statusCode = (response as! HTTPURLResponse).statusCode
+				print("URL Session Task Succeeded: HTTP \(statusCode)")
+							
+				guard let data = data else {
+				print("Error with data")
+				return
+				}
+				
+				do {
+					let decoder = JSONDecoder()
+					let previewListData = try decoder.decode([PreviewListItem].self, from: data)
+					completion(previewListData)
+				} catch {
+					print(error.localizedDescription)
+				}
+				
+			}
+			else {
+				print("URL Session Task Failed: %@", error!.localizedDescription)
+			}
+		})
+		task.resume()
+		session.finishTasksAndInvalidate()
+	}
+	
 	
 	
 }
