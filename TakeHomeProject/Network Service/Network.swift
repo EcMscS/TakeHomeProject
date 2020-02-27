@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import CachyKit
 
 class Network {
 	
@@ -53,6 +54,53 @@ class Network {
 		})
 		task.resume()
 		session.finishTasksAndInvalidate()
+	}
+	
+	static func fetchPreviewListDataWithCache(completion: @escaping (_ data: [PreviewListItem])->()) {
+		
+		let cachy = CachyLoader()
+		
+		guard let URL = URL(string: "http://ios-test-proj.mizo.co/preview_load") else {return}
+		
+		var request = URLRequest(url: URL)
+		request.httpMethod = "GET"
+		
+		request.addValue("application/x-www-form-urlencoded; charset=utf-8", forHTTPHeaderField: "Content-Type")
+		
+		cachy.loadWith(urlRequest: request, isRefresh: false, expirationDate: ExpiryDate.seconds(5000).date) { (data, url) in
+			do {
+				let decoder = JSONDecoder()
+				let previewListData = try decoder.decode([PreviewListItem].self, from: data)
+				completion(previewListData)
+			} catch {
+				print(error.localizedDescription)
+			}
+		}
+	}
+	
+	static func fetchItemDetailsWithCache(itemID: String, completion: @escaping (_ data: Item)->()) {
+		
+		let cachy = CachyLoader()
+		
+		guard var URL = URL(string: "http://ios-test-proj.mizo.co/load") else {return}
+        
+		let URLParams = [
+            "item_id": "\(itemID)",
+        ]
+		
+        URL = URL.appendingQueryParameters(URLParams)
+        var request = URLRequest(url: URL)
+        request.httpMethod = "GET"
+		
+		cachy.loadWith(urlRequest: request, isRefresh: false, expirationDate: ExpiryDate.seconds(5000).date) { (data, url) in
+			do {
+				let decoder = JSONDecoder()
+				let itemData = try decoder.decode(Item.self, from: data)
+				completion(itemData)
+			} catch {
+				print(error.localizedDescription)
+			}
+		}
 	}
 	
 	static func fetchPreviewListData(completion: @escaping (_ data: [PreviewListItem])->()) {

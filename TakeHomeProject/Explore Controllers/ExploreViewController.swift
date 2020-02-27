@@ -24,7 +24,7 @@ class ExploreViewController: UIViewController {
     }
     
 	fileprivate func populateData() {
-		Network.fetchPreviewListData { (previewListData) in
+		Network.fetchPreviewListDataWithCache { (previewListData) in
 			self.exploreViewPreviewListItems = previewListData
 			DispatchQueue.main.async {
 				self.cardCollectionView.reloadData()

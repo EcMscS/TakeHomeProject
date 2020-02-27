@@ -8,7 +8,7 @@ target 'TakeHomeProject' do
   # Pods for TakeHomeProject
   pod 'Mapbox-iOS-SDK', '~> 5.7'
   pod 'KeychainSwift', '~> 19.0'  
-
+  pod 'CachyKit'
   target 'TakeHomeProjectTests' do
     inherit! :search_paths
     # Pods for testing
