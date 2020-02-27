@@ -9,5 +9,6 @@
 import UIKit
 
 class ExplorePreviewCardCollectionViewCell: UICollectionViewCell {
-    
+	@IBOutlet weak var cardViewWidthConstraintOutlet: NSLayoutConstraint!
+	
 }

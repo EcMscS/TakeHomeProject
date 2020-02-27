@@ -22,6 +22,7 @@ class ExploreViewController: UIViewController {
 		cardCollectionView.delegate = self
 		cardCollectionView.dataSource = self
 		
+		
 		populateData()
     }
     
@@ -57,6 +58,7 @@ extension ExploreViewController:  UICollectionViewDelegate, UICollectionViewData
 			print("Error with collection cell init")
 			return UICollectionViewCell()
 		}
+		cell.cardViewWidthConstraintOutlet.constant = cardCollectionView.frame.size.width - 20
 		
 		return cell
 	}
@@ -65,7 +67,7 @@ extension ExploreViewController:  UICollectionViewDelegate, UICollectionViewData
 		
 		let width = cardCollectionView.frame.size.width - 20
 		
-		return CGSize(width: width, height: 192)
+		return CGSize(width: width, height: 194)
 	}
 	
 	func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
