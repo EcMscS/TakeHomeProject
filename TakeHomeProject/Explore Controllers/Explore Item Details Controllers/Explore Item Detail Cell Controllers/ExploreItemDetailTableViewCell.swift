@@ -27,6 +27,21 @@ class ExploreItemDetailTableViewCell: UITableViewCell {
 		}
 		
     }
+	
+	func loadItemDetails(fromModal data: Item) {
+		if let itemName = data.name {
+			self.itemNameLabel.text = itemName
+		}
+		if let itemPrice = data.price {
+			self.itemPriceLabel.text = "$\(itemPrice)"
+		}
+		if let itemDescription = data.description {
+			self.itemDescriptionLabel.text = itemDescription
+		}
+		if let itemMatchPercentage = data.score {
+			self.itemMatchPercentageLabel.text = "\(itemMatchPercentage)% MATCH"
+		}
+	}
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)

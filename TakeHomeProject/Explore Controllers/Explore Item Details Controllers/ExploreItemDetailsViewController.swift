@@ -34,11 +34,24 @@ class ExploreItemDetailsViewController: UIViewController {
 		if let itemID = itemID {
 			Network.fetchItemDetailsWithCache(cachyInstance: cachy, itemID: itemID) { (itemData) in
 				self.itemData = itemData
+				
+				self.loadHeaderItemViewImage(withURL: itemData.images[0].url!, withAttribution: itemData.images[0].credits!)
+				
 				self.tableView.reloadData()
 			}
 		} else {
 			print("No Item ID Data")
 		}
+	}
+	
+	fileprivate func loadHeaderItemViewImage(withURL url: String, withAttribution attribution: String) {
+		guard let imageURL = URL(string: url) else { return }
+		
+		self.itemImageView.cachyImageLoad(imageURL, isShowLoading: true) { (image, url) in
+			print("image loaded")
+		}
+		
+		self.itemImageAttributionLabel.text = attribution
 	}
     
 	override var preferredStatusBarStyle: UIStatusBarStyle {
