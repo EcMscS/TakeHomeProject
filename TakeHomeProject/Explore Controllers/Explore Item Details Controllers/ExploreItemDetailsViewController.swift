@@ -15,6 +15,8 @@ class ExploreItemDetailsViewController: UIViewController {
 	var itemData: Item?
 	
 	@IBOutlet weak var tableView: UITableView!
+	@IBOutlet weak var itemImageView: UIImageView!
+	@IBOutlet weak var itemImageAttributionLabel: UILabel!
 	
 	let cachy = CachyLoader()
 	
