@@ -38,7 +38,7 @@ class ExploreItemDetailTableViewCell: UITableViewCell {
 		if let itemDescription = data.description {
 			self.itemDescriptionLabel.text = itemDescription
 		}
-		if let itemMatchPercentage = data.score {
+		if let itemMatchPercentage = data.score?.value {
 			self.itemMatchPercentageLabel.text = "\(itemMatchPercentage)% MATCH"
 		}
 	}

@@ -24,8 +24,24 @@ class ExploreItemDeliveryProviderTableViewCell: UITableViewCell {
 			self.providerQualitiesLabel.font = UIFont.guidanceText
 			self.providerMinOrderLabel.font = UIFont.guidanceText
 		}
-		
     }
+	
+	func loadProviderDetails(withData data: DeliveryService) {
+		if let providerName = data.name {
+			self.providerNameLabel.text = providerName
+		}
+		guard let min = data.eta?.min, let max = data.eta?.max, let fee = data.fee else {
+				print("provider fee, min, max not available")
+				return
+		}
+		self.providerETAandPriceLabel.text = "\(min) - \(max) min, $\(fee) fee"
+		
+		self.providerQualitiesLabel.text = "No Qualities Available"
+		
+		if let minOrder = data.minimumOrder {
+			self.providerMinOrderLabel.text = "$\(minOrder) order minimum"
+		}
+	}
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)

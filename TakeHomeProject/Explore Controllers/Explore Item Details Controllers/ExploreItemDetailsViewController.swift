@@ -77,9 +77,15 @@ extension ExploreItemDetailsViewController: UITableViewDelegate, UITableViewData
 	func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
 		if indexPath.row == 0 {
 			guard let cell = tableView.dequeueReusableCell(withIdentifier: "itemDetail", for: indexPath) as? ExploreItemDetailTableViewCell else { return UITableViewCell() }
+			if let itemDetails = self.itemData {
+				cell.loadItemDetails(fromModal: itemDetails)
+			}
 			return cell
 		} else {
 			guard let cell = tableView.dequeueReusableCell(withIdentifier: "itemDeliveryProvider", for: indexPath) as? ExploreItemDeliveryProviderTableViewCell else { return UITableViewCell() }
+			if let providerDetails = itemData?.deliveryServices[indexPath.row - 1] {
+				cell.loadProviderDetails(withData: providerDetails)
+			}
 			return cell
 		}
 		
