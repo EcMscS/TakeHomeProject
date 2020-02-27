@@ -24,7 +24,7 @@
                                     <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </view>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="187" id="nPE-su-v0T">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="itemDetail" rowHeight="187" id="nPE-su-v0T" customClass="ExploreItemDetailTableViewCell" customModule="TakeHomeProject" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="306" width="375" height="187"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="nPE-su-v0T" id="Xg0-1k-NeQ">
@@ -38,7 +38,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="$12.99" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B1h-YJ-Zlf">
-                                                    <rect key="frame" x="297.33333333333331" y="37" width="62.666666666666686" height="20.333333333333329"/>
+                                                    <rect key="frame" x="307" y="37" width="53" height="20.333333333333329"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -82,11 +82,11 @@
                                                 <constraint firstItem="B1h-YJ-Zlf" firstAttribute="top" secondItem="Xg0-1k-NeQ" secondAttribute="topMargin" constant="26" id="oCU-7f-2Q3"/>
                                                 <constraint firstItem="HAU-sJ-jqr" firstAttribute="top" secondItem="Xg0-1k-NeQ" secondAttribute="topMargin" id="vuh-jx-Hce"/>
                                                 <constraint firstItem="Aen-1o-6jk" firstAttribute="top" secondItem="HAU-sJ-jqr" secondAttribute="bottom" constant="8" id="wUQ-zR-Nxk"/>
-                                                <constraint firstItem="B1h-YJ-Zlf" firstAttribute="leading" secondItem="Aen-1o-6jk" secondAttribute="trailing" constant="25" id="zZU-Kd-FPt"/>
+                                                <constraint firstItem="B1h-YJ-Zlf" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Aen-1o-6jk" secondAttribute="trailing" constant="25" id="zZU-Kd-FPt"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="81" id="kcf-1e-ydb">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="itemDeliveryProvider" rowHeight="81" id="kcf-1e-ydb" customClass="ExploreItemDeliveryProviderTableViewCell" customModule="TakeHomeProject" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="493" width="375" height="81"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="kcf-1e-ydb" id="hyz-tR-WEj">
