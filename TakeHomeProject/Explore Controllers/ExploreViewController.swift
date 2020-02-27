@@ -22,7 +22,7 @@ class ExploreViewController: UIViewController {
 		cardCollectionView.delegate = self
 		cardCollectionView.dataSource = self
 		
-		
+		setupNavBarLogo()
 		populateData()
     }
     
@@ -34,6 +34,12 @@ class ExploreViewController: UIViewController {
 				self.cardCollectionView.reloadData()
 			}
 		}
+	}
+	
+	fileprivate func setupNavBarLogo() {
+		let logo = UIImage(named: "takeHomeProjectLogo.pdf")
+		let imageView = UIImageView(image: logo)
+		self.navigationItem.titleView = imageView
 	}
 
 }

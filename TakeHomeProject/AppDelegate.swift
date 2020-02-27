@@ -41,6 +41,5 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 		UITabBar.appearance().backgroundColor = UIColor(named: "Color")
 	}
 
-
 }
 
