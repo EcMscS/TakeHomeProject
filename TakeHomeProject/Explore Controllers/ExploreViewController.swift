@@ -59,6 +59,10 @@ extension ExploreViewController:  UICollectionViewDelegate, UICollectionViewData
 		present(vc, animated: true, completion: nil)
 	}
 	
+	func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
+		
+	}
+	
 	func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
 		guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "previewCardCell", for: indexPath) as? ExplorePreviewCardCollectionViewCell else {
 			print("Error with collection cell init")
@@ -66,6 +70,8 @@ extension ExploreViewController:  UICollectionViewDelegate, UICollectionViewData
 		}
 		cell.cardViewWidthConstraintOutlet.constant = cardCollectionView.frame.size.width - 20
 		
+		let data = exploreViewPreviewListItems[indexPath.row]
+		cell.loadLabelData(withModelData: data)
 		
 		return cell
 	}
