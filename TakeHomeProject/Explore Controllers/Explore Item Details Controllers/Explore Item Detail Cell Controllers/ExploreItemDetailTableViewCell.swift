@@ -10,9 +10,22 @@ import UIKit
 
 class ExploreItemDetailTableViewCell: UITableViewCell {
 
+	@IBOutlet weak var itemNameLabel: UILabel!
+	@IBOutlet weak var itemPriceLabel: UILabel!
+	@IBOutlet weak var itemDescriptionLabel: UILabel!
+	@IBOutlet weak var itemMatchPercentageLabel: UILabel!
+	
+	
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        
+		DispatchQueue.main.async {
+			self.itemNameLabel.font = UIFont.largeTitle
+			self.itemPriceLabel.font = UIFont.price
+			self.itemDescriptionLabel.font = UIFont.subTitle
+			self.itemMatchPercentageLabel.font = UIFont.guidanceText
+		}
+		
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
