@@ -13,4 +13,12 @@ class ExplorePreviewCardCollectionViewCell: UICollectionViewCell {
 	
 	@IBOutlet weak var itemTitleLabel: UILabel!
 	
+	required init?(coder aDecoder: NSCoder) {
+		super.init(coder:aDecoder)
+		
+		DispatchQueue.main.async {
+			self.itemTitleLabel.font = UIFont.largeTitle
+		}
+	}
+	
 }
