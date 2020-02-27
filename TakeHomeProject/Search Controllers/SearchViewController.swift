@@ -35,13 +35,20 @@ class SearchViewController: UIViewController, MGLMapViewDelegate {
 	
 	func setupMapView() {
 		mapView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
-		mapView.showsUserLocation = true
 		mapView.delegate = self
+		mapView.showsUserHeadingIndicator = true
 	}
 	
 	func setMapViewCenter() {
 		guard let userLocation = userLocation else { return }
 		mapView.setCenter(userLocation, zoomLevel: 13, animated: true)
+	}
+	
+	func mapView(_ mapView: MGLMapView, viewFor annotation: MGLAnnotation) -> MGLAnnotationView? {
+		if annotation is MGLUserLocation && mapView.userLocation != nil {
+			return CustomUserLocationAnnotationView()
+		}
+		return nil
 	}
 	
 

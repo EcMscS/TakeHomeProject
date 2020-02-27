@@ -21,7 +21,7 @@
 	<key>NSLocationWhenInUseUsageDescription</key>
 	<string>Shows your location on the map and helps improve the map.</string>
 	<key>MGLMapboxAccessToken</key>
-	<string>pk.eyJ1IjoiYXJpbmRhdm9vZGlhbiIsImEiOiJjazcwcXdnYmUwMWR5M21uNjdvbjVhNTAwIn0.ZSaAaW1fTwsz1GwlJTEc1A</string>
+	<string>pk.eyJ1Ijoiam9obi1hdC1lYXR1cCIsImEiOiJjanY1b2VvazYwdmJoNDNud2dmdjhnMnhkIn0.eD8JGs3_4p0YOdwxaA1oQQ</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
 	<key>CFBundleExecutable</key>
