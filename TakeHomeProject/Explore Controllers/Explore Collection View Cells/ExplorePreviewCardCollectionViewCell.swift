@@ -38,7 +38,7 @@ class ExplorePreviewCardCollectionViewCell: UICollectionViewCell {
 	
 	func loadLabelData(withModelData model: PreviewListItem) {
 		
-		
+		#warning("Needs checks for null elses")
 		
 		if let itemTitle = model.name {
 			self.itemTitleLabel.text = itemTitle
