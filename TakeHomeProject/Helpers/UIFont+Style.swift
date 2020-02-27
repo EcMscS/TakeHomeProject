@@ -12,7 +12,7 @@ import UIKit
 extension UIFont {
     
     class var largeTitle: UIFont {
-      return UIFont(name: "ApercuPro-Bold", size: 24.0)!
+      return UIFont(name: "ApercuPro-Bold", size: 20.0)!
     }
 
     class var sectionHeader: UIFont {
@@ -26,9 +26,17 @@ extension UIFont {
     class var subTitle: UIFont {
       return UIFont(name: "ApercuPro-Regular", size: 16.0)!
     }
+	
+	class var guidanceTextLight: UIFont {
+      return UIFont(name: "ApercuPro-Regular", size: 12.0)!
+    }
     
     class var guidanceText: UIFont {
       return UIFont(name: "ApercuPro-Bold", size: 12.0)!
     }
+	
+	class var price: UIFont {
+		return UIFont(name: "ApercuPro-Mono", size: 16.0)!
+	}
 }
 
