@@ -36,7 +36,7 @@ extension UIFont {
     }
 	
 	class var price: UIFont {
-		return UIFont(name: "ApercuPro-Mono", size: 16.0)!
+		return UIFont(name: "ApercuPro-Mono", size: 18.0)!
 	}
 }
 
