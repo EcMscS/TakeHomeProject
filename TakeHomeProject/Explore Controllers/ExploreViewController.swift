@@ -7,9 +7,11 @@
 //
 
 import UIKit
+import CachyKit
 
 class ExploreViewController: UIViewController {
 
+	let cachy = CachyLoader()
 	var exploreViewPreviewListItems: [PreviewListItem] = []
 	
 	@IBOutlet weak var cardCollectionView: UICollectionView!
@@ -24,7 +26,8 @@ class ExploreViewController: UIViewController {
     }
     
 	fileprivate func populateData() {
-		Network.fetchPreviewListDataWithCache { (previewListData) in
+		
+		Network.fetchPreviewListDataWithCache(cachyInstance: cachy) { (previewListData) in
 			self.exploreViewPreviewListItems = previewListData
 			DispatchQueue.main.async {
 				self.cardCollectionView.reloadData()

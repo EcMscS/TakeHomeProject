@@ -56,9 +56,9 @@ class Network {
 		session.finishTasksAndInvalidate()
 	}
 	
-	static func fetchPreviewListDataWithCache(completion: @escaping (_ data: [PreviewListItem])->()) {
+	static func fetchPreviewListDataWithCache(cachyInstance: CachyLoader, completion: @escaping (_ data: [PreviewListItem])->()) {
 		
-		let cachy = CachyLoader()
+		let cachy = cachyInstance
 		
 		guard let URL = URL(string: "http://ios-test-proj.mizo.co/preview_load") else {return}
 		
@@ -78,9 +78,9 @@ class Network {
 		}
 	}
 	
-	static func fetchItemDetailsWithCache(itemID: String, completion: @escaping (_ data: Item)->()) {
+	static func fetchItemDetailsWithCache(cachyInstance: CachyLoader, itemID: String, completion: @escaping (_ data: Item)->()) {
 		
-		let cachy = CachyLoader()
+		let cachy = cachyInstance
 		
 		guard var URL = URL(string: "http://ios-test-proj.mizo.co/load") else {return}
         
