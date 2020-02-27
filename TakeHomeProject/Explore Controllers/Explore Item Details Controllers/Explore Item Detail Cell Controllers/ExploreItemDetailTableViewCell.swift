@@ -15,6 +15,7 @@ class ExploreItemDetailTableViewCell: UITableViewCell {
 	@IBOutlet weak var itemDescriptionLabel: UILabel!
 	@IBOutlet weak var itemMatchPercentageLabel: UILabel!
 	
+	@IBOutlet weak var matchStarOutlet: UIImageView!
 	
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -40,6 +41,11 @@ class ExploreItemDetailTableViewCell: UITableViewCell {
 		}
 		if let itemMatchPercentage = data.score?.value {
 			self.itemMatchPercentageLabel.text = "\(itemMatchPercentage)% MATCH"
+		} else {
+			self.itemMatchPercentageLabel.text = "UNKNOWN MATCH"
+			self.itemMatchPercentageLabel.textColor = .lightGray
+			self.matchStarOutlet.tintColor = .lightGray
+			
 		}
 	}
 

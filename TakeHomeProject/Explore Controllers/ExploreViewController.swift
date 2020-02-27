@@ -75,7 +75,7 @@ extension ExploreViewController:  UICollectionViewDelegate, UICollectionViewData
 			print("Error with collection cell init")
 			return UICollectionViewCell()
 		}
-		cell.cardViewWidthConstraintOutlet.constant = cardCollectionView.frame.size.width - 20
+		cell.cardViewWidthConstraintOutlet.constant = cardCollectionView.frame.size.width - 30
 		
 		let data = exploreViewPreviewListItems[indexPath.row]
 		cell.loadLabelData(withModelData: data)
@@ -85,7 +85,7 @@ extension ExploreViewController:  UICollectionViewDelegate, UICollectionViewData
 	
 	func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
 		
-		let width = cardCollectionView.frame.size.width - 20
+		let width = cardCollectionView.frame.size.width - 30
 		
 		return CGSize(width: width, height: 194)
 	}
@@ -99,7 +99,7 @@ extension ExploreViewController:  UICollectionViewDelegate, UICollectionViewData
 	}
 
 	func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
-		return UIEdgeInsets(top: 10, left: 10, bottom: 10, right: 10)
+		return UIEdgeInsets(top: 10, left: 15, bottom: 15, right: 20)
 	}
 	
 	

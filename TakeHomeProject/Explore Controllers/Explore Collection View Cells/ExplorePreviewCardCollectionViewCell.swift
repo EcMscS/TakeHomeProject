@@ -20,6 +20,8 @@ class ExplorePreviewCardCollectionViewCell: UICollectionViewCell {
 	@IBOutlet weak var itemCategoryTypeLabel: UILabel!
 	@IBOutlet weak var itemMatchPercentageLabel: UILabel!
 	
+	@IBOutlet weak var matchStarOutlet: UIImageView!
+	
 	required init?(coder aDecoder: NSCoder) {
 		super.init(coder:aDecoder)
 
@@ -51,6 +53,8 @@ class ExplorePreviewCardCollectionViewCell: UICollectionViewCell {
 		}
 		if let placeName = model.place?.name {
 			self.itemPlaceNameLabel.text = placeName
+		} else {
+			self.itemPlaceNameLabel.isHidden = true
 		}
 		if let placeStatus = model.place?.openNow {
 			placeStatus == true ? (self.itemPlaceStatusLabel.text = "OPEN") : (self.itemPlaceStatusLabel.text = "CLOSED")
@@ -60,9 +64,15 @@ class ExplorePreviewCardCollectionViewCell: UICollectionViewCell {
 		}
 		if let itemCategory = model.category {
 			self.itemCategoryTypeLabel.text = itemCategory
+		} else {
+			self.itemCategoryTypeLabel.isHidden = true
 		}
 		if let matchScore = model.score?.value {
 			self.itemMatchPercentageLabel.text = "\(matchScore)% MATCH"
+		} else {
+			self.itemMatchPercentageLabel.text = "UNKNOWN MATCH"
+			self.itemMatchPercentageLabel.textColor = .lightGray
+			self.matchStarOutlet.tintColor = .lightGray
 		}
 		
 	}

@@ -25,7 +25,7 @@
                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="bs5-EN-3FM">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="278"/>
                                         </imageView>
-                                        <label opaque="NO" userInteractionEnabled="NO" alpha="0.69999999999999996" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Photo Credit : paulpa" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mrr-wh-Wiv">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Photo Credit : paulpa" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mrr-wh-Wiv">
                                             <rect key="frame" x="234.33333333333334" y="248.66666666666666" width="119.66666666666666" height="14.333333333333343"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                             <color key="textColor" name="Color"/>
@@ -73,6 +73,7 @@
                                                     <subviews>
                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="matchStar" translatesAutoresizingMaskIntoConstraints="NO" id="b2l-a5-Vs8">
                                                             <rect key="frame" x="0.0" y="0.0" width="24" height="24"/>
+                                                            <color key="tintColor" red="0.27892729640000002" green="0.76095235350000001" blue="0.45484626290000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         </imageView>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="92% MATCH" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jPK-Z9-Imm">
                                                             <rect key="frame" x="32.000000000000007" y="0.0" width="67.666666666666686" height="24"/>
@@ -109,6 +110,7 @@
                                             <outlet property="itemMatchPercentageLabel" destination="jPK-Z9-Imm" id="fH1-m2-OPr"/>
                                             <outlet property="itemNameLabel" destination="Aen-1o-6jk" id="nYS-9V-qEK"/>
                                             <outlet property="itemPriceLabel" destination="B1h-YJ-Zlf" id="SKK-19-aci"/>
+                                            <outlet property="matchStarOutlet" destination="b2l-a5-Vs8" id="hBG-Hx-7Wa"/>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="itemDeliveryProvider" rowHeight="81" id="kcf-1e-ydb" customClass="ExploreItemDeliveryProviderTableViewCell" customModule="TakeHomeProject" customModuleProvider="target">
