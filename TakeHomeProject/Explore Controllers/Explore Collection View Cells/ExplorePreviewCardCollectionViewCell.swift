@@ -11,5 +11,6 @@ import UIKit
 class ExplorePreviewCardCollectionViewCell: UICollectionViewCell {
 	@IBOutlet weak var cardViewWidthConstraintOutlet: NSLayoutConstraint!
 	
+	@IBOutlet weak var itemTitleLabel: UILabel!
 	
 }

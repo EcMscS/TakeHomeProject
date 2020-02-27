@@ -66,6 +66,8 @@ extension ExploreViewController:  UICollectionViewDelegate, UICollectionViewData
 		}
 		cell.cardViewWidthConstraintOutlet.constant = cardCollectionView.frame.size.width - 20
 		
+		cell.itemTitleLabel.font = UIFont.largeTitle
+		
 		return cell
 	}
 	
