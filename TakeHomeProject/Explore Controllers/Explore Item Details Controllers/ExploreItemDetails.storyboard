@@ -60,7 +60,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="HAU-sJ-jqr">
-                                                    <rect key="frame" x="15" y="11" width="87.666666666666671" height="13.333333333333334"/>
+                                                    <rect key="frame" x="15.000000000000007" y="11" width="87.666666666666671" height="13.333333333333334"/>
                                                     <subviews>
                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="matchStar" translatesAutoresizingMaskIntoConstraints="NO" id="b2l-a5-Vs8">
                                                             <rect key="frame" x="0.0" y="0.0" width="12" height="13.333333333333334"/>
@@ -116,10 +116,23 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Ha-H0-UXo">
+                                <rect key="frame" x="315" y="54" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="CeV-nH-err"/>
+                                    <constraint firstAttribute="height" constant="40" id="lsf-bK-D5v"/>
+                                </constraints>
+                                <state key="normal" image="selected-profile"/>
+                                <connections>
+                                    <action selector="dismissViewTapped:" destination="08T-8s-r9V" eventType="touchUpInside" id="mW8-Pd-SYm"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="GfP-9E-CPH" secondAttribute="trailing" id="3Em-Uz-9Ym"/>
+                            <constraint firstItem="re0-5s-92L" firstAttribute="trailing" secondItem="1Ha-H0-UXo" secondAttribute="trailing" constant="20" id="FjZ-fc-34e"/>
+                            <constraint firstItem="1Ha-H0-UXo" firstAttribute="top" secondItem="re0-5s-92L" secondAttribute="top" constant="10" id="PIf-KB-dud"/>
                             <constraint firstItem="GfP-9E-CPH" firstAttribute="leading" secondItem="QPC-fG-Dmi" secondAttribute="leading" id="e7s-64-SDb"/>
                             <constraint firstItem="GfP-9E-CPH" firstAttribute="top" secondItem="QPC-fG-Dmi" secondAttribute="top" id="lzh-mf-l3M"/>
                             <constraint firstAttribute="bottom" secondItem="GfP-9E-CPH" secondAttribute="bottom" id="qkl-u6-no4"/>
@@ -137,6 +150,7 @@
     </scenes>
     <resources>
         <image name="matchStar" width="12" height="12"/>
+        <image name="selected-profile" width="24" height="24"/>
         <namedColor name="orangeColor">
             <color red="0.92599999904632568" green="0.35199999809265137" blue="0.16099999845027924" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>

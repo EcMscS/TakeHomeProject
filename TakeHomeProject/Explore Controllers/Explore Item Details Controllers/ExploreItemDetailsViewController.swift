@@ -22,7 +22,11 @@ class ExploreItemDetailsViewController: UIViewController {
 	override var preferredStatusBarStyle: UIStatusBarStyle {
 		return .lightContent
 	}
-
+	
+	@IBAction func dismissViewTapped(_ sender: UIButton) {
+		self.dismiss(animated: true, completion: nil)
+	}
+	
 }
 
 extension ExploreItemDetailsViewController: UITableViewDelegate, UITableViewDataSource {

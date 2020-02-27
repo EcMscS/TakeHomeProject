@@ -54,8 +54,8 @@ extension ExploreViewController:  UICollectionViewDelegate, UICollectionViewData
 	func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
 		let storyboard = UIStoryboard(name: "ExploreItemDetails", bundle: nil)
 		let vc = storyboard.instantiateViewController(withIdentifier: "toExploreItemDetails")
-		vc.modalPresentationStyle = .fullScreen
-		vc.modalTransitionStyle = .crossDissolve
+		//vc.modalPresentationStyle = .fullScreen
+		//vc.modalTransitionStyle = .crossDissolve
 		present(vc, animated: true, completion: nil)
 	}
 	
