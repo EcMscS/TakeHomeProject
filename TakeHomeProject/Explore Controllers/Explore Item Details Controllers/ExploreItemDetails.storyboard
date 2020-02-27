@@ -122,7 +122,7 @@
                                     <constraint firstAttribute="width" constant="40" id="CeV-nH-err"/>
                                     <constraint firstAttribute="height" constant="40" id="lsf-bK-D5v"/>
                                 </constraints>
-                                <state key="normal" image="selected-profile"/>
+                                <state key="normal" image="circularDismissIcon"/>
                                 <connections>
                                     <action selector="dismissViewTapped:" destination="08T-8s-r9V" eventType="touchUpInside" id="mW8-Pd-SYm"/>
                                 </connections>
@@ -149,8 +149,8 @@
         </scene>
     </scenes>
     <resources>
+        <image name="circularDismissIcon" width="34" height="34"/>
         <image name="matchStar" width="12" height="12"/>
-        <image name="selected-profile" width="24" height="24"/>
         <namedColor name="orangeColor">
             <color red="0.92599999904632568" green="0.35199999809265137" blue="0.16099999845027924" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
