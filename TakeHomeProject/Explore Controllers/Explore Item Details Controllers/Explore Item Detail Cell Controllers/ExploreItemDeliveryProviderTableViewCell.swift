@@ -19,12 +19,10 @@ class ExploreItemDeliveryProviderTableViewCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         
-		DispatchQueue.main.async {
-			self.providerNameLabel.font = UIFont.sectionHeader
-			self.providerETAandPriceLabel.font = UIFont.sectionHeader
-			self.providerQualitiesLabel.font = UIFont.guidanceText
-			self.providerMinOrderLabel.font = UIFont.guidanceText
-		}
+		self.providerNameLabel.font = UIFont.sectionHeader
+		self.providerETAandPriceLabel.font = UIFont.sectionHeader
+		self.providerQualitiesLabel.font = UIFont.guidanceText
+		self.providerMinOrderLabel.font = UIFont.guidanceText
     }
 	
 	func loadProviderDetails(withData data: DeliveryService) {

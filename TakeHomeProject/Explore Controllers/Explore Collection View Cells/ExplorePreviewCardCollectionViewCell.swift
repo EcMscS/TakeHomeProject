@@ -22,20 +22,17 @@ class ExplorePreviewCardCollectionViewCell: UICollectionViewCell {
 	
 	@IBOutlet weak var matchStarOutlet: UIImageView!
 	
-	required init?(coder aDecoder: NSCoder) {
-		super.init(coder:aDecoder)
-
-		DispatchQueue.main.async {
-			self.itemTitleLabel.font = UIFont.largeTitle
-			self.itemPriceLabel.font = UIFont.price
-			self.itemDescriptionLabel.font = UIFont.subTitle
-			self.itemPlaceNameLabel.font = UIFont.guidanceText
-			self.itemPlaceStatusLabel.font = UIFont.guidanceText
-			self.itemPlaceDistanceLabel.font = UIFont.guidanceTextLight
-			self.itemCategoryTypeLabel.font = UIFont.guidanceTextLight
-			self.itemMatchPercentageLabel.font = UIFont.guidanceText
-		}
+	override func awakeFromNib() {
+		super.awakeFromNib()
 		
+		self.itemTitleLabel.font = UIFont.largeTitle
+		self.itemPriceLabel.font = UIFont.price
+		self.itemDescriptionLabel.font = UIFont.subTitle
+		self.itemPlaceNameLabel.font = UIFont.guidanceText
+		self.itemPlaceStatusLabel.font = UIFont.guidanceText
+		self.itemPlaceDistanceLabel.font = UIFont.guidanceTextLight
+		self.itemCategoryTypeLabel.font = UIFont.guidanceTextLight
+		self.itemMatchPercentageLabel.font = UIFont.guidanceText
 	}
 	
 	func loadLabelData(withModelData model: PreviewListItem) {

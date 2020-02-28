@@ -20,12 +20,10 @@ class ExploreItemDetailTableViewCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         
-		DispatchQueue.main.async {
-			self.itemNameLabel.font = UIFont.largeTitle
-			self.itemPriceLabel.font = UIFont.price
-			self.itemDescriptionLabel.font = UIFont.subTitle
-			self.itemMatchPercentageLabel.font = UIFont.guidanceText
-		}
+		self.itemNameLabel.font = UIFont.largeTitle
+		self.itemPriceLabel.font = UIFont.price
+		self.itemDescriptionLabel.font = UIFont.subTitle
+		self.itemMatchPercentageLabel.font = UIFont.guidanceText
 		
     }
 	
