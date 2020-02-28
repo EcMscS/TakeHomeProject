@@ -11,12 +11,15 @@ import UIKit
 class ProfilePopUpViewController: UIViewController {
 	
 	@IBOutlet weak var cellPhoneTextField: UITextField!
+	@IBOutlet weak var descriptionTextLabel: UIView!
+	@IBOutlet weak var createAccountButtonOutlet: UIButton!
 	
 	override func viewDidLoad() {
 		super.viewDidLoad()
 		
 		setupCellPhoneTextField()
 		hideKeyboardWhenTappedAround()
+		
 	}
 	
 	@IBAction func createAccountTapped(_ sender: UIButton) {
@@ -50,7 +53,7 @@ class ProfilePopUpViewController: UIViewController {
 	}
 	
 	func validateForPhoneNumber(value: String) -> Bool {
-		let PHONE_REGEX = "^\\d{3}-\\d{3}-\\d{4}$"
+		let PHONE_REGEX = "^\\d{3}\\d{3}\\d{4}$"
 		let phoneNumberTest = NSPredicate(format: "SELF MATCHES %@", PHONE_REGEX)
 		let result =  phoneNumberTest.evaluate(with: value)
 		return result
