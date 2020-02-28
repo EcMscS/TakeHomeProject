@@ -52,7 +52,7 @@ extension AnimationController: UIViewControllerAnimatedTransitioning {
 				presentAnimation(with: transitionContext, viewToAnimate: toView)
 			
 			case .dismiss:
-				guard let toView = toViewController.viewWithTag(100) else {
+				guard let toView = toViewController.snapshotView(afterScreenUpdates: true) else {
 					print("Error with viewWithTag")
 					return
 				}
