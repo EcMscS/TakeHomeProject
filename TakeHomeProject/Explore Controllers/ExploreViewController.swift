@@ -16,6 +16,10 @@ class ExploreViewController: UIViewController {
 	
 	@IBOutlet weak var cardCollectionView: UICollectionView!
 	
+	var selectedCell: ExplorePreviewCardCollectionViewCell?
+    var selectedCellImageViewSnapshot: UIView?
+	var animator: Animator?
+	
 	override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -25,6 +29,17 @@ class ExploreViewController: UIViewController {
 		setupNavBarLogo()
 		populateData()
     }
+	
+	func presentSecondViewController(with data: PreviewListItem) {
+		let secondViewController = UIStoryboard(name: "ExploreItemDetails", bundle: nil).instantiateViewController(withIdentifier: "toExploreItemDetails") as! ExploreItemDetailsViewController
+		
+		// 4
+		secondViewController.transitioningDelegate = self
+		
+		secondViewController.modalPresentationStyle = .fullScreen
+		secondViewController.itemID = data.id
+		present(secondViewController, animated: true)
+	   }
     
 	fileprivate func populateData() {
 		
@@ -52,16 +67,23 @@ extension ExploreViewController:  UICollectionViewDelegate, UICollectionViewData
 	}
 	
 	func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-		let storyboard = UIStoryboard(name: "ExploreItemDetails", bundle: nil)
-		let vc = storyboard.instantiateViewController(withIdentifier: "toExploreItemDetails") as! ExploreItemDetailsViewController
-		vc.modalPresentationStyle = .fullScreen
-		if let itemID = self.exploreViewPreviewListItems[indexPath.row].id {
-			vc.itemID = itemID
-		} else {
-			return
-		}
+//		let storyboard = UIStoryboard(name: "ExploreItemDetails", bundle: nil)
+//		let vc = storyboard.instantiateViewController(withIdentifier: "toExploreItemDetails") as! ExploreItemDetailsViewController
+//		vc.modalPresentationStyle = .fullScreen
+//		if let itemID = self.exploreViewPreviewListItems[indexPath.row].id {
+//			vc.itemID = itemID
+//		} else {
+//			return
+//		}
+//
+//		present(vc, animated: true, completion: nil)
 		
-		present(vc, animated: true, completion: nil)
+		selectedCell = collectionView.cellForItem(at: indexPath) as? ExplorePreviewCardCollectionViewCell
+        // 7
+		selectedCellImageViewSnapshot = selectedCell?.snapshotView(afterScreenUpdates: false)
+        
+		presentSecondViewController(with: self.exploreViewPreviewListItems[indexPath.row])
+		
 	}
 	
 	func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
@@ -100,5 +122,38 @@ extension ExploreViewController:  UICollectionViewDelegate, UICollectionViewData
 		return UIEdgeInsets(top: 10, left: 15, bottom: 10, right: 15)
 	}
 	
+	
+}
+
+extension ExploreViewController: UIViewControllerTransitioningDelegate {
+	
+	func animationController(forPresented presented: UIViewController, presenting: UIViewController, source: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+		
+		guard let this = presenting as? ExploreViewController else {
+			print("this removed")
+			return nil}
+		
+		guard let firstViewController = presenting as? ExploreViewController,
+            let secondViewController = presented as? ExploreItemDetailsViewController,
+            let selectedCellImageViewSnapshot = selectedCellImageViewSnapshot
+            else {
+				print("returned nil on vc transition presenting")
+				return nil
+		}
+
+        animator = Animator(type: .present, firstViewController: firstViewController, secondViewController: secondViewController, selectedCellImageViewSnapshot: selectedCellImageViewSnapshot)
+        return animator
+    }
+
+    
+    func animationController(forDismissed dismissed: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+        
+        guard let secondViewController = dismissed as? ExploreItemDetailsViewController,
+            let selectedCellImageViewSnapshot = selectedCellImageViewSnapshot
+            else { return nil }
+
+        animator = Animator(type: .dismiss, firstViewController: self, secondViewController: secondViewController, selectedCellImageViewSnapshot: selectedCellImageViewSnapshot)
+        return animator
+    }
 	
 }
