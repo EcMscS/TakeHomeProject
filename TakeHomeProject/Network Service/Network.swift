@@ -67,7 +67,7 @@ class Network {
 		
 		request.addValue("application/x-www-form-urlencoded; charset=utf-8", forHTTPHeaderField: "Content-Type")
 		
-		cachy.loadWith(urlRequest: request, isRefresh: false, expirationDate: ExpiryDate.seconds(5000).date) { (data, url) in
+		cachy.loadWith(urlRequest: request, isRefresh: false, expirationDate: ExpiryDate.seconds(7200).date) { (data, url) in
 			do {
 				let decoder = JSONDecoder()
 				let previewListData = try decoder.decode([PreviewListItem].self, from: data)
@@ -92,7 +92,7 @@ class Network {
         var request = URLRequest(url: URL)
         request.httpMethod = "GET"
 		
-		cachy.loadWith(urlRequest: request, isRefresh: false, expirationDate: ExpiryDate.seconds(5000).date) { (data, url) in
+		cachy.loadWith(urlRequest: request, isRefresh: false, expirationDate: ExpiryDate.seconds(7200).date) { (data, url) in
 			do {
 				let decoder = JSONDecoder()
 				let itemData = try decoder.decode(Item.self, from: data)
