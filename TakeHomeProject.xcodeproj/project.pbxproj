@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1F0C296F24095BE800F6174A /* AnimationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0C296E24095BE800F6174A /* AnimationController.swift */; };
 		1F0DDC7E24083BF900C74E37 /* ExploreItemDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0DDC7D24083BF900C74E37 /* ExploreItemDetailTableViewCell.swift */; };
 		1F0DDC8024083F4A00C74E37 /* ExploreItemDeliveryProviderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0DDC7F24083F4900C74E37 /* ExploreItemDeliveryProviderTableViewCell.swift */; };
 		1F0DDC8324087BEE00C74E37 /* MapBoxUserLocationAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0DDC8224087BEE00C74E37 /* MapBoxUserLocationAnnotationView.swift */; };
@@ -60,6 +61,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1F0C296E24095BE800F6174A /* AnimationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationController.swift; sourceTree = "<group>"; };
 		1F0DDC7D24083BF900C74E37 /* ExploreItemDetailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreItemDetailTableViewCell.swift; sourceTree = "<group>"; };
 		1F0DDC7F24083F4900C74E37 /* ExploreItemDeliveryProviderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ExploreItemDeliveryProviderTableViewCell.swift; path = "/Users/arindavoodian/Desktop/TakeHomeProject/TakeHomeProject/Explore Controllers/Explore Item Details Controllers/Explore Item Detail Cell Controllers/ExploreItemDeliveryProviderTableViewCell.swift"; sourceTree = "<absolute>"; };
 		1F0DDC8224087BEE00C74E37 /* MapBoxUserLocationAnnotationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapBoxUserLocationAnnotationView.swift; sourceTree = "<group>"; };
@@ -130,6 +132,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1F0C296D24095BC600F6174A /* Animation Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				1F0C296E24095BE800F6174A /* AnimationController.swift */,
+			);
+			path = "Animation Controllers";
+			sourceTree = "<group>";
+		};
 		1F0DDC7C24083B5200C74E37 /* Explore Item Detail Cell Controllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -198,6 +208,7 @@
 			children = (
 				1F70D81624042EBA00F8557E /* AppDelegate.swift */,
 				1F70D81824042EBA00F8557E /* SceneDelegate.swift */,
+				1F0C296D24095BC600F6174A /* Animation Controllers */,
 				1F0DDC8124087BA600C74E37 /* MapBox Models */,
 				1F45CB862406E5F9005FB7E8 /* Keychain Service */,
 				1F45CB812406D29F005FB7E8 /* Network Service */,
@@ -515,6 +526,7 @@
 				1F0DDC8324087BEE00C74E37 /* MapBoxUserLocationAnnotationView.swift in Sources */,
 				1F70D8722405685600F8557E /* SearchViewController.swift in Sources */,
 				1F70D87D24058C7600F8557E /* Item.swift in Sources */,
+				1F0C296F24095BE800F6174A /* AnimationController.swift in Sources */,
 				1F45CB882406E613005FB7E8 /* Keychain.swift in Sources */,
 				1F70D879240584FB00F8557E /* Score.swift in Sources */,
 				1F70D87F24058D9600F8557E /* UserAuth.swift in Sources */,

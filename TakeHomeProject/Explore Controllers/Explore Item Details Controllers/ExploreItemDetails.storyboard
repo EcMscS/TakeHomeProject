@@ -4,6 +4,7 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -11,7 +12,7 @@
         <scene sceneID="pLF-2a-4iy">
             <objects>
                 <viewController storyboardIdentifier="toExploreItemDetails" id="08T-8s-r9V" customClass="ExploreItemDetailsViewController" customModule="TakeHomeProject" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QPC-fG-Dmi">
+                    <view key="view" tag="100" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QPC-fG-Dmi">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" contentInsetAdjustmentBehavior="never" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" contentViewInsetsToSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GfP-9E-CPH">
@@ -170,7 +171,7 @@
                                 </prototypes>
                             </tableView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Ha-H0-UXo">
-                                <rect key="frame" x="315" y="10" width="40" height="40"/>
+                                <rect key="frame" x="315" y="54" width="40" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="40" id="CeV-nH-err"/>
                                     <constraint firstAttribute="height" constant="40" id="lsf-bK-D5v"/>
@@ -185,11 +186,12 @@
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="GfP-9E-CPH" secondAttribute="trailing" id="3Em-Uz-9Ym"/>
                             <constraint firstAttribute="trailing" secondItem="1Ha-H0-UXo" secondAttribute="trailing" constant="20" id="FjZ-fc-34e"/>
-                            <constraint firstItem="1Ha-H0-UXo" firstAttribute="top" secondItem="QPC-fG-Dmi" secondAttribute="top" constant="10" id="PIf-KB-dud"/>
+                            <constraint firstItem="1Ha-H0-UXo" firstAttribute="top" secondItem="8hS-Ct-bBD" secondAttribute="top" constant="10" id="PIf-KB-dud"/>
                             <constraint firstItem="GfP-9E-CPH" firstAttribute="leading" secondItem="QPC-fG-Dmi" secondAttribute="leading" id="e7s-64-SDb"/>
                             <constraint firstItem="GfP-9E-CPH" firstAttribute="top" secondItem="QPC-fG-Dmi" secondAttribute="top" id="lzh-mf-l3M"/>
                             <constraint firstAttribute="bottom" secondItem="GfP-9E-CPH" secondAttribute="bottom" id="qkl-u6-no4"/>
                         </constraints>
+                        <viewLayoutGuide key="safeArea" id="8hS-Ct-bBD"/>
                     </view>
                     <connections>
                         <outlet property="itemImageAttributionLabel" destination="mrr-wh-Wiv" id="fqV-t3-7pM"/>

@@ -14,7 +14,7 @@
         <scene sceneID="ia6-yn-Hxc">
             <objects>
                 <viewController id="fwO-2b-jma" customClass="ExploreViewController" customModule="TakeHomeProject" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="fgI-WF-Yfd">
+                    <view key="view" tag="100" contentMode="scaleToFill" id="fgI-WF-Yfd">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>

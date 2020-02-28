@@ -54,9 +54,7 @@ extension ExploreViewController:  UICollectionViewDelegate, UICollectionViewData
 	func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
 		let storyboard = UIStoryboard(name: "ExploreItemDetails", bundle: nil)
 		let vc = storyboard.instantiateViewController(withIdentifier: "toExploreItemDetails") as! ExploreItemDetailsViewController
-		//vc.modalPresentationStyle = .fullScreen
-		//vc.modalTransitionStyle = .crossDissolve
-		
+		vc.modalPresentationStyle = .fullScreen
 		if let itemID = self.exploreViewPreviewListItems[indexPath.row].id {
 			vc.itemID = itemID
 		} else {
