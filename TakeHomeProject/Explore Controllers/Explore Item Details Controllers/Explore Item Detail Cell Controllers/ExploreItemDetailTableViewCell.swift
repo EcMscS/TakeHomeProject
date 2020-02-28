@@ -15,6 +15,7 @@ class ExploreItemDetailTableViewCell: UITableViewCell {
 	@IBOutlet weak var itemDescriptionLabel: UILabel!
 	@IBOutlet weak var itemMatchPercentageLabel: UILabel!
 	
+	@IBOutlet weak var availableOnLabelOutlet: UILabel!
 	@IBOutlet weak var matchStarOutlet: UIImageView!
 	
     override func awakeFromNib() {
@@ -24,6 +25,7 @@ class ExploreItemDetailTableViewCell: UITableViewCell {
 		self.itemPriceLabel.font = UIFont.price
 		self.itemDescriptionLabel.font = UIFont.subTitle
 		self.itemMatchPercentageLabel.font = UIFont.guidanceText
+		self.availableOnLabelOutlet.font = UIFont.sectionHeader
 		
     }
 	
