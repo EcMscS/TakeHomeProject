@@ -93,7 +93,7 @@ extension ExploreItemDetailsViewController: UITableViewDelegate, UITableViewData
 	
 	func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
 		if indexPath.row == 0 {
-			return 156
+			return 170
 		} else {
 			return 81
 		}
