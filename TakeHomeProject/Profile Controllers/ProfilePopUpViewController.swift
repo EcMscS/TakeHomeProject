@@ -13,12 +13,16 @@ class ProfilePopUpViewController: UIViewController {
 	@IBOutlet weak var cellPhoneTextField: UITextField!
 	@IBOutlet weak var descriptionTextLabel: UIView!
 	@IBOutlet weak var createAccountButtonOutlet: UIButton!
+	@IBOutlet weak var popUpViewBottomConstraintOutlet: NSLayoutConstraint!
 	
 	override func viewDidLoad() {
 		super.viewDidLoad()
 		
 		setupCellPhoneTextField()
 		hideKeyboardWhenTappedAround()
+		
+		NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow), name: UIResponder.keyboardWillShowNotification, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide), name: UIResponder.keyboardWillHideNotification, object: nil)
 		
 	}
 	
@@ -57,6 +61,26 @@ class ProfilePopUpViewController: UIViewController {
 		let phoneNumberTest = NSPredicate(format: "SELF MATCHES %@", PHONE_REGEX)
 		let result =  phoneNumberTest.evaluate(with: value)
 		return result
+	}
+	
+	@objc func keyboardWillShow(notification: NSNotification) {
+		if ((notification.userInfo?[UIResponder.keyboardFrameBeginUserInfoKey] as? NSValue)?.cgRectValue) != nil {
+			if self.popUpViewBottomConstraintOutlet.constant == 88 {
+				UIView.animate(withDuration: 0.3) {
+					self.popUpViewBottomConstraintOutlet.constant = UIScreen.main.bounds.height * 0.4
+					self.view.layoutIfNeeded()
+				}
+			}
+		}
+	}
+	
+	@objc func keyboardWillHide(notification: NSNotification) {
+		if self.popUpViewBottomConstraintOutlet.constant != 0 {
+			UIView.animate(withDuration: 0.3) {
+				self.popUpViewBottomConstraintOutlet.constant = 88
+				self.view.layoutIfNeeded()
+			}
+		}
 	}
 	
 }

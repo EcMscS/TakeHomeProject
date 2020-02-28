@@ -159,6 +159,7 @@
                         <outlet property="cellPhoneTextField" destination="lKk-cg-3bY" id="7vq-SU-bJr"/>
                         <outlet property="createAccountButtonOutlet" destination="bRv-mz-Dv0" id="Ksa-xw-Cx6"/>
                         <outlet property="descriptionTextLabel" destination="rbd-tE-jF9" id="G8X-3k-yOt"/>
+                        <outlet property="popUpViewBottomConstraintOutlet" destination="MBU-Rx-c3L" id="DwU-81-G16"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="I2L-4K-FMo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
