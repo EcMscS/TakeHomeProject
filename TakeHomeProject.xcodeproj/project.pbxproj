@@ -10,6 +10,8 @@
 		1F0DDC7E24083BF900C74E37 /* ExploreItemDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0DDC7D24083BF900C74E37 /* ExploreItemDetailTableViewCell.swift */; };
 		1F0DDC8024083F4A00C74E37 /* ExploreItemDeliveryProviderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0DDC7F24083F4900C74E37 /* ExploreItemDeliveryProviderTableViewCell.swift */; };
 		1F0DDC8324087BEE00C74E37 /* MapBoxUserLocationAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0DDC8224087BEE00C74E37 /* MapBoxUserLocationAnnotationView.swift */; };
+		1F0DDC852408957C00C74E37 /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0DDC842408957C00C74E37 /* UIViewController+Extensions.swift */; };
+		1F0DDC872408984700C74E37 /* Double+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0DDC862408984700C74E37 /* Double+Extensions.swift */; };
 		1F43C1DC2406CC58004F0781 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F70D8872406C59100F8557E /* Profile.storyboard */; };
 		1F43C1DE2406CD1D004F0781 /* ProfilePopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F43C1DD2406CD1D004F0781 /* ProfilePopUpViewController.swift */; };
 		1F45CB832406D2C4005FB7E8 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F45CB822406D2C4005FB7E8 /* Network.swift */; };
@@ -61,6 +63,8 @@
 		1F0DDC7D24083BF900C74E37 /* ExploreItemDetailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreItemDetailTableViewCell.swift; sourceTree = "<group>"; };
 		1F0DDC7F24083F4900C74E37 /* ExploreItemDeliveryProviderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ExploreItemDeliveryProviderTableViewCell.swift; path = "/Users/arindavoodian/Desktop/TakeHomeProject/TakeHomeProject/Explore Controllers/Explore Item Details Controllers/Explore Item Detail Cell Controllers/ExploreItemDeliveryProviderTableViewCell.swift"; sourceTree = "<absolute>"; };
 		1F0DDC8224087BEE00C74E37 /* MapBoxUserLocationAnnotationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapBoxUserLocationAnnotationView.swift; sourceTree = "<group>"; };
+		1F0DDC842408957C00C74E37 /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
+		1F0DDC862408984700C74E37 /* Double+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+Extensions.swift"; sourceTree = "<group>"; };
 		1F43C1DD2406CD1D004F0781 /* ProfilePopUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePopUpViewController.swift; sourceTree = "<group>"; };
 		1F45CB822406D2C4005FB7E8 /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
 		1F45CB872406E613005FB7E8 /* Keychain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Keychain.swift; sourceTree = "<group>"; };
@@ -263,6 +267,8 @@
 			children = (
 				1F70D8472404541D00F8557E /* UIFont+Style.swift */,
 				1F70D8852406C58400F8557E /* UIView+Extensions.swift */,
+				1F0DDC842408957C00C74E37 /* UIViewController+Extensions.swift */,
+				1F0DDC862408984700C74E37 /* Double+Extensions.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -500,6 +506,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F0DDC872408984700C74E37 /* Double+Extensions.swift in Sources */,
+				1F0DDC852408957C00C74E37 /* UIViewController+Extensions.swift in Sources */,
 				1F70D8862406C58400F8557E /* UIView+Extensions.swift in Sources */,
 				1F70D881240599A700F8557E /* PreviewList.swift in Sources */,
 				1F70D83D24044E6400F8557E /* ExploreViewController.swift in Sources */,

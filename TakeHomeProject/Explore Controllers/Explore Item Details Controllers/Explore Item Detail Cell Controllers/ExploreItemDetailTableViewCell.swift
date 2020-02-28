@@ -40,7 +40,7 @@ class ExploreItemDetailTableViewCell: UITableViewCell {
 			self.itemDescriptionLabel.text = itemDescription
 		}
 		if let itemMatchPercentage = data.score?.value {
-			self.itemMatchPercentageLabel.text = "\(itemMatchPercentage)% MATCH"
+			self.itemMatchPercentageLabel.text = "\(itemMatchPercentage.removeZerosFromEnd())% MATCH"
 		} else {
 			self.itemMatchPercentageLabel.text = "UNKNOWN MATCH"
 			self.itemMatchPercentageLabel.textColor = .lightGray

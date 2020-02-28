@@ -16,6 +16,7 @@ class ProfilePopUpViewController: UIViewController {
 		super.viewDidLoad()
 		
 		setupCellPhoneTextField()
+		hideKeyboardWhenTappedAround()
 	}
 	
 	@IBAction func createAccountTapped(_ sender: UIButton) {

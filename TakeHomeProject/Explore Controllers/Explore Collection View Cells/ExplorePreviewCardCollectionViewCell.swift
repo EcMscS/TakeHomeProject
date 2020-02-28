@@ -68,7 +68,7 @@ class ExplorePreviewCardCollectionViewCell: UICollectionViewCell {
 			self.itemCategoryTypeLabel.isHidden = true
 		}
 		if let matchScore = model.score?.value {
-			self.itemMatchPercentageLabel.text = "\(matchScore)% MATCH"
+			self.itemMatchPercentageLabel.text = "\(matchScore.removeZerosFromEnd())% MATCH"
 		} else {
 			self.itemMatchPercentageLabel.text = "UNKNOWN MATCH"
 			self.itemMatchPercentageLabel.textColor = .lightGray

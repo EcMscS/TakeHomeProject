@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Foundation
 
 class ExploreItemDeliveryProviderTableViewCell: UITableViewCell {
 
@@ -34,12 +35,13 @@ class ExploreItemDeliveryProviderTableViewCell: UITableViewCell {
 				print("provider fee, min, max not available")
 				return
 		}
+
 		self.providerETAandPriceLabel.text = "\(min) - \(max) min, $\(fee) fee"
 		
 		self.providerQualitiesLabel.text = "No Qualities Available"
 		
 		if let minOrder = data.minimumOrder {
-			self.providerMinOrderLabel.text = "$\(minOrder) order minimum"
+			self.providerMinOrderLabel.text = "$\(minOrder.removeZerosFromEnd()) order minimum"
 		}
 	}
 
