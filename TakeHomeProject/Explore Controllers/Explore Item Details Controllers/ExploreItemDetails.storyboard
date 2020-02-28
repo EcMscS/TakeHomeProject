@@ -21,8 +21,8 @@
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="278"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bs5-EN-3FM">
-                                            <rect key="frame" x="-2" y="-2" width="379" height="281"/>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bs5-EN-3FM">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="278"/>
                                         </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Photo Credit : paulpa" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mrr-wh-Wiv">
                                             <rect key="frame" x="234.33333333333334" y="248.66666666666666" width="119.66666666666666" height="14.333333333333343"/>
@@ -32,11 +32,11 @@
                                         </label>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstAttribute="bottom" secondItem="bs5-EN-3FM" secondAttribute="bottom" constant="-1" id="3Dr-Vc-Jur"/>
+                                        <constraint firstAttribute="bottom" secondItem="bs5-EN-3FM" secondAttribute="bottom" id="3Dr-Vc-Jur"/>
                                         <constraint firstAttribute="trailing" secondItem="mrr-wh-Wiv" secondAttribute="trailing" constant="21" id="61d-Fz-TfR"/>
-                                        <constraint firstAttribute="trailing" secondItem="bs5-EN-3FM" secondAttribute="trailing" constant="-2" id="QaL-iA-1QE"/>
-                                        <constraint firstItem="bs5-EN-3FM" firstAttribute="leading" secondItem="9MP-vq-TkD" secondAttribute="leading" constant="-2" id="R9W-gQ-IkE"/>
-                                        <constraint firstItem="bs5-EN-3FM" firstAttribute="top" secondItem="9MP-vq-TkD" secondAttribute="top" constant="-2" id="X6j-hr-4qh"/>
+                                        <constraint firstAttribute="trailing" secondItem="bs5-EN-3FM" secondAttribute="trailing" id="QaL-iA-1QE"/>
+                                        <constraint firstItem="bs5-EN-3FM" firstAttribute="leading" secondItem="9MP-vq-TkD" secondAttribute="leading" id="R9W-gQ-IkE"/>
+                                        <constraint firstItem="bs5-EN-3FM" firstAttribute="top" secondItem="9MP-vq-TkD" secondAttribute="top" id="X6j-hr-4qh"/>
                                         <constraint firstAttribute="bottom" secondItem="mrr-wh-Wiv" secondAttribute="bottom" constant="15" id="vjp-2g-bri"/>
                                     </constraints>
                                 </view>
