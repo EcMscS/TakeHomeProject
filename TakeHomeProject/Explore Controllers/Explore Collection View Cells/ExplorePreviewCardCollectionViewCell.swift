@@ -33,12 +33,11 @@ class ExplorePreviewCardCollectionViewCell: UICollectionViewCell {
 		self.itemPlaceDistanceLabel.font = UIFont.guidanceTextLight
 		self.itemCategoryTypeLabel.font = UIFont.guidanceTextLight
 		self.itemMatchPercentageLabel.font = UIFont.guidanceText
+		
 	}
 	
 	func loadLabelData(withModelData model: PreviewListItem) {
-		
-		#warning("Needs checks for null elses")
-		
+				
 		if let itemTitle = model.name {
 			self.itemTitleLabel.text = itemTitle
 		}
