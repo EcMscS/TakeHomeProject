@@ -45,14 +45,14 @@
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <stackView opaque="NO" contentMode="scaleToFill" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="PYP-18-hBl">
-                                                            <rect key="frame" x="256" y="9" width="99" height="24"/>
+                                                            <rect key="frame" x="268" y="9" width="87" height="14.333333333333336"/>
                                                             <subviews>
                                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="matchStar" translatesAutoresizingMaskIntoConstraints="NO" id="Bho-X7-mhw">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="24" height="24"/>
+                                                                    <rect key="frame" x="0.0" y="0.0" width="12" height="14.333333333333334"/>
                                                                     <color key="tintColor" red="0.27892729640000002" green="0.76095235350000001" blue="0.45484626290000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                                 </imageView>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="92% MATCH" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ktJ-Nn-4Kk">
-                                                                    <rect key="frame" x="28" y="0.0" width="71" height="24"/>
+                                                                    <rect key="frame" x="16" y="0.0" width="71" height="14.333333333333334"/>
                                                                     <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                                     <color key="textColor" red="0.27892729640000002" green="0.76095235350000001" blue="0.45484626290000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                                     <nil key="highlightedColor"/>
@@ -66,7 +66,7 @@
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="761" text="$128.50" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cDY-jd-Agf">
-                                                            <rect key="frame" x="294.33333333333331" y="41.666666666666664" width="62.666666666666686" height="20.333333333333336"/>
+                                                            <rect key="frame" x="294.33333333333331" y="32" width="62.666666666666686" height="20.333333333333329"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
@@ -117,7 +117,7 @@
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Salmon Belly topped with caviar, tomato, and onions" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fe7-Ch-Afv">
                                                             <rect key="frame" x="10" y="76" width="259" height="31.333333333333329"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                                                            <nil key="textColor"/>
+                                                            <color key="textColor" name="secondaryDescription"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                     </subviews>
@@ -227,6 +227,9 @@
         </namedColor>
         <namedColor name="previewCardCollectionViewBackground">
             <color red="0.96200001239776611" green="0.95999997854232788" blue="0.94499999284744263" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="secondaryDescription">
+            <color red="0.2959015833963784" green="0.29447210714808675" blue="0.2973310596446701" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
     </resources>
 </document>

@@ -85,7 +85,7 @@
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Salmon belly topped with caviar, tomato, and onions" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JO3-4g-Rjf">
                                                     <rect key="frame" x="20" y="85.666666666666671" width="257.33333333333331" height="28.666666666666671"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                                    <nil key="textColor"/>
+                                                    <color key="textColor" name="secondaryDescription"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
@@ -213,6 +213,9 @@
         </namedColor>
         <namedColor name="orangeColor">
             <color red="0.92599999904632568" green="0.35199999809265137" blue="0.16099999845027924" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <namedColor name="secondaryDescription">
+            <color red="0.2959015833963784" green="0.29447210714808675" blue="0.2973310596446701" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
     </resources>
 </document>
