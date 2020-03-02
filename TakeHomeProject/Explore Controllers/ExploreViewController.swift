@@ -129,11 +129,7 @@ extension ExploreViewController: UIViewControllerTransitioningDelegate {
 	
 	func animationController(forPresented presented: UIViewController, presenting: UIViewController, source: UIViewController) -> UIViewControllerAnimatedTransitioning? {
 		
-		guard let this = presenting as? ExploreViewController else {
-			print("this removed")
-			return nil}
-		
-		guard let firstViewController = presenting as? ExploreViewController,
+		guard let firstViewController = ((presenting as! UITabBarController).viewControllers?.first as! UINavigationController).viewControllers.first as? ExploreViewController,
             let secondViewController = presented as? ExploreItemDetailsViewController,
             let selectedCellImageViewSnapshot = selectedCellImageViewSnapshot
             else {
